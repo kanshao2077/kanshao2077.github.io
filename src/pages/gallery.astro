@@ -1,0 +1,55 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { copy, gallery } from "../data/site";
+
+const lang = "zh";
+const t = copy[lang].galleryPage;
+---
+
+<BaseLayout lang={lang} path="/gallery" title={t.title}>
+  <section class="page-hero section-pad compact">
+    <p class="eyebrow">Gallery</p>
+    <h1>{t.title}</h1>
+    <p>{t.intro}</p>
+  </section>
+
+  <section class="gallery-grid section-pad top-tight">
+    {gallery.map((item, index) => (
+      <article class="gallery-card">
+        <button class="gallery-image-button" type="button" data-gallery-open={`gallery-${index}`} aria-label={`放大查看：${item.title[lang]}`}>
+          <img src={item.image} alt={item.title[lang]} loading={index > 1 ? "lazy" : "eager"} decoding="async" />
+        </button>
+        <div>
+          <h2>{item.title[lang]}</h2>
+        </div>
+        <dialog class="gallery-dialog" id={`gallery-${index}`}>
+          <button class="gallery-dialog-close" type="button" data-gallery-close aria-label="关闭">×</button>
+          <img src={item.image} alt={item.title[lang]} />
+          <p>{item.title[lang]}</p>
+        </dialog>
+      </article>
+    ))}
+  </section>
+  <script>
+    document.addEventListener("click", (event) => {
+      const target = event.target;
+      if (!(target instanceof Element)) return;
+
+      const openButton = target.closest("[data-gallery-open]");
+      if (openButton instanceof HTMLElement) {
+        const dialog = document.getElementById(openButton.dataset.galleryOpen || "");
+        if (dialog instanceof HTMLDialogElement) dialog.showModal();
+        return;
+      }
+
+      if (target.closest("[data-gallery-close]")) {
+        target.closest("dialog")?.close();
+        return;
+      }
+
+      if (target instanceof HTMLDialogElement && target.classList.contains("gallery-dialog")) {
+        target.close();
+      }
+    });
+  </script>
+</BaseLayout>

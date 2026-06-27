@@ -1,0 +1,56 @@
+---
+import { timeline, type Lang } from "../data/site";
+
+interface Props {
+  lang: Lang;
+  compact?: boolean;
+}
+
+const { lang, compact = false } = Astro.props;
+const items = compact ? timeline.slice(0, 2) : timeline;
+const moreItems = compact ? timeline.slice(2) : [];
+const moreLabel = lang === "zh" ? "更多" : "More";
+const moreHint = lang === "zh" ? "点击展开更早的工作经历" : "Expand earlier work experience";
+---
+
+<div class:list={["timeline", compact && "is-compact"]}>
+  {items.map((item) => (
+    <article class="timeline-item">
+      <p class="timeline-time">{item.time[lang]}</p>
+      <div>
+        <h3>{item.title[lang]}</h3>
+        <p class="timeline-org">{item.org[lang]}</p>
+        <ul>
+          {item.bullets[lang].map((bullet) => <li>{bullet}</li>)}
+        </ul>
+        <p class="timeline-output">{item.output[lang]}</p>
+      </div>
+    </article>
+  ))}
+  {moreItems.length > 0 && (
+    <details class="timeline-more">
+      <summary class="timeline-more-summary">
+        <span class="timeline-time">{lang === "zh" ? "更早" : "Earlier"}</span>
+        <span class="timeline-more-copy">
+          <strong>{moreLabel}</strong>
+          <span>{moreHint}</span>
+        </span>
+      </summary>
+      <div class="timeline-more-items">
+        {moreItems.map((item) => (
+          <article class="timeline-item">
+            <p class="timeline-time">{item.time[lang]}</p>
+            <div>
+              <h3>{item.title[lang]}</h3>
+              <p class="timeline-org">{item.org[lang]}</p>
+              <ul>
+                {item.bullets[lang].map((bullet) => <li>{bullet}</li>)}
+              </ul>
+              <p class="timeline-output">{item.output[lang]}</p>
+            </div>
+          </article>
+        ))}
+      </div>
+    </details>
+  )}
+</div>

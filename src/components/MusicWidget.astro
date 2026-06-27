@@ -1,0 +1,51 @@
+---
+import { copy, type Lang } from "../data/site";
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const t = copy[lang].music;
+---
+
+<div class="music-widget" title={t.hint}>
+  <button type="button" class="music-button" data-music-button data-listen={t.listen} data-pause={t.pause}>
+    <span class="music-dot" aria-hidden="true"></span>
+    <span data-music-label>{t.listen}</span>
+  </button>
+</div>
+
+<script>
+  const audio = new Audio("/audio/bafang-laicai.mp3");
+  audio.preload = "none";
+  let playing = false;
+
+  const button = document.querySelector("[data-music-button]");
+  const label = document.querySelector("[data-music-label]");
+
+  function setPausedState() {
+    playing = false;
+    button?.classList.remove("is-playing");
+    if (label) label.textContent = button?.dataset.listen || "Listen";
+  }
+
+  button?.addEventListener("click", async () => {
+    if (!playing) {
+      try {
+        await audio.play();
+        playing = true;
+        button.classList.add("is-playing");
+        if (label) label.textContent = button.dataset.pause || "Pause";
+      } catch {
+        setPausedState();
+      }
+      return;
+    }
+
+    audio.pause();
+    setPausedState();
+  });
+
+  audio.addEventListener("ended", setPausedState);
+</script>
