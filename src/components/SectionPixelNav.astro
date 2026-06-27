@@ -1,0 +1,83 @@
+---
+interface SectionItem {
+  id: string;
+  label: string;
+}
+
+interface Props {
+  sections: SectionItem[];
+}
+
+const { sections } = Astro.props;
+---
+
+<nav class="pixel-section-nav" aria-label="Page sections" data-pixel-section-nav>
+  <ol>
+    {sections.map((section, index) => (
+      <li>
+        <a href={`#${section.id}`} data-pixel-target={section.id} aria-label={section.label}>
+          <span class="pixel-label">{section.label}</span>
+          <span class="pixel-mark" aria-hidden="true"></span>
+          <span class="pixel-index" aria-hidden="true">{String(index + 1).padStart(2, "0")}</span>
+        </a>
+      </li>
+    ))}
+  </ol>
+</nav>
+
+<script>
+  const pixelLinks = Array.from(document.querySelectorAll("[data-pixel-target]"));
+  const pixelSections = pixelLinks
+    .map((link) => document.getElementById(link.getAttribute("data-pixel-target") || ""))
+    .filter(Boolean);
+
+  const setActivePixel = (id) => {
+    pixelLinks.forEach((link) => {
+      const isActive = link.getAttribute("data-pixel-target") === id;
+      link.classList.toggle("is-active", isActive);
+      if (isActive) {
+        link.setAttribute("aria-current", "true");
+      } else {
+        link.removeAttribute("aria-current");
+      }
+    });
+  };
+
+  pixelLinks.forEach((link) => {
+    link.addEventListener("click", (event) => {
+      const targetId = link.getAttribute("data-pixel-target");
+      const target = targetId ? document.getElementById(targetId) : null;
+      if (!target) return;
+
+      event.preventDefault();
+      target.scrollIntoView({ behavior: "smooth", block: "start" });
+      history.replaceState(null, "", `#${targetId}`);
+      setActivePixel(targetId);
+    });
+  });
+
+  if ("IntersectionObserver" in window) {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const visible = entries
+          .filter((entry) => entry.isIntersecting)
+          .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+
+        if (visible?.target?.id) {
+          setActivePixel(visible.target.id);
+        }
+      },
+      {
+        rootMargin: "-38% 0px -46% 0px",
+        threshold: [0, 0.25, 0.5, 0.75],
+      }
+    );
+
+    pixelSections.forEach((section) => observer.observe(section));
+  }
+
+  const initialId = window.location.hash.replace("#", "") || pixelSections[0]?.id;
+  if (initialId) {
+    setActivePixel(initialId);
+  }
+</script>

@@ -1,0 +1,20 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import WorkGrid from "../components/WorkGrid.astro";
+import { copy } from "../data/site";
+
+const lang = "zh";
+const t = copy[lang].worksPage;
+---
+
+<BaseLayout lang={lang} path="/works" title={t.title}>
+  <section class="page-hero section-pad compact">
+    <p class="eyebrow">Portfolio</p>
+    <h1>{t.title}</h1>
+    <p>{t.intro}</p>
+  </section>
+
+  <section class="section-pad top-tight">
+    <WorkGrid lang={lang} />
+  </section>
+</BaseLayout>

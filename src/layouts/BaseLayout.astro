@@ -1,0 +1,84 @@
+---
+import MusicWidget from "../components/MusicWidget.astro";
+import { copy, languages, nav, switchPath, type Lang } from "../data/site";
+import "../styles/global.css";
+
+interface Props {
+  lang: Lang;
+  path: string;
+  title?: string;
+  description?: string;
+  theme?: "light" | "dark";
+  hideFooter?: boolean;
+}
+
+const { lang, path, title, description, theme = "light", hideFooter = false } = Astro.props;
+const t = copy[lang];
+const pageTitle = title ? `${title} | ${t.meta.title}` : t.meta.title;
+const pageDescription = description ?? t.meta.description;
+const toggleHref = switchPath(lang, path);
+const currentNav = nav[lang];
+---
+
+<!doctype html>
+<html lang={languages[lang].locale}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content={pageDescription} />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={pageDescription} />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/covers/social-card.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <title>{pageTitle}</title>
+  </head>
+  <body data-lang={lang} data-theme={theme}>
+    <div class="site-shell">
+      <header class="site-header" data-site-header>
+        <a class="brand-mark" href={lang === "zh" ? "/" : "/en"} aria-label="Home">
+          <img class="brand-avatar" src="/avatar/kanshao-avatar.jpg" alt={lang === "zh" ? "侃少 2077 头像" : "Kanshao 2077 avatar"} />
+          <span class="brand-text">{lang === "zh" ? "侃少 2077" : "Kanshao 2077"}</span>
+        </a>
+
+        <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" data-menu-toggle>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="site-nav" data-site-nav>
+          {currentNav.map((item) => (
+            <a href={item.href} class:list={[Astro.url.pathname === item.href && "is-active"]}>{item.label}</a>
+          ))}
+          <a class="lang-switch" href={toggleHref}>{languages[lang].switchLabel}</a>
+        </nav>
+      </header>
+
+      <main>
+        <slot />
+      </main>
+
+      {!hideFooter && (
+        <footer class="site-footer">
+          <div>
+            <strong>{lang === "zh" ? "侃少 2077" : "Kanshao 2077"}</strong>
+            <p>AI Product Ops · Content Growth · AIGC</p>
+          </div>
+          <a href={lang === "zh" ? "/contact" : "/en/contact"}>Contact</a>
+        </footer>
+      )}
+    </div>
+
+    <MusicWidget lang={lang} />
+
+    <script>
+      const menuButton = document.querySelector("[data-menu-toggle]");
+      const nav = document.querySelector("[data-site-nav]");
+
+      menuButton?.addEventListener("click", () => {
+        const isOpen = nav?.classList.toggle("is-open") ?? false;
+        menuButton.setAttribute("aria-expanded", String(isOpen));
+      });
+    </script>
+  </body>
+</html>
