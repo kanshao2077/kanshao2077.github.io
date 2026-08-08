@@ -672,6 +672,32 @@ export const works = [
     }
   },
   {
+    id: "feishu-personal-manual",
+    category: "articles",
+    featured: false,
+    cover: "",
+    href: "https://my.feishu.cn/wiki/EnK5wYzdsiRJlJkD2Smcml7zn8f",
+    zh: {
+      title: "我的飞书个人说明书",
+      deck: "用一份飞书文档集中介绍我自己，作为认识我和继续交流的入口。",
+      role: "自我介绍、信息整理、文档维护",
+      result: "形成一份可持续更新的个人说明文档",
+      proof: "这个作品证明：我能把个人信息和表达组织成清晰、可访问的文档入口。",
+      tools: ["Feishu", "Personal Profile", "Writing", "Documentation"],
+      cta: "打开飞书"
+    },
+    en: {
+      title: "My Personal User Manual on Feishu",
+      deck: "A Feishu document that introduces who I am and provides a starting point for further conversation.",
+      role: "Self-introduction, information organization, document maintenance",
+      result: "Created a personal manual that can be continuously updated",
+      proof:
+        "This work proves that I can organize personal information and expression into a clear, accessible document.",
+      tools: ["Feishu", "Personal Profile", "Writing", "Documentation"],
+      cta: "Open Feishu"
+    }
+  },
+  {
     id: "xhs-title-skill",
     category: "skill",
     featured: false,
