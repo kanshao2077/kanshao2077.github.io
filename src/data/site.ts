@@ -488,32 +488,6 @@ export const works = [
     }
   },
   {
-    id: "personal-site",
-    category: "vibe",
-    featured: false,
-    cover: "",
-    href: "https://github.com/kanshao2077/kanshao2077.github.io",
-    zh: {
-      title: "侃少 2077 个人网站",
-      deck: "使用 Astro、TypeScript 和原生 CSS 构建的双语个人网站，也是全部作品的持续更新入口。",
-      role: "内容架构、视觉设计、前端实现与 GitHub Pages 部署",
-      result: "完成支持双语内容、自定义域名和自动部署的个人作品站",
-      proof: "这个作品证明：我能独立完成个人品牌内容的组织、设计、开发和发布。",
-      tools: ["Astro", "TypeScript", "CSS", "GitHub Pages"],
-      cta: "查看仓库"
-    },
-    en: {
-      title: "Kanshao 2077 Personal Site",
-      deck: "A bilingual personal website built with Astro, TypeScript, and native CSS, serving as the evolving home for all projects.",
-      role: "Content architecture, visual design, frontend implementation, GitHub Pages deployment",
-      result: "Built a bilingual portfolio with a custom domain and automated deployment",
-      proof:
-        "This work proves that I can independently organize, design, build, and publish a personal brand experience.",
-      tools: ["Astro", "TypeScript", "CSS", "GitHub Pages"],
-      cta: "View Repository"
-    }
-  },
-  {
     id: "hangzhou-stardew",
     category: "aigc",
     featured: true,
