@@ -7,7 +7,10 @@ interface Props {
 }
 
 const { lang, featuredOnly = false } = Astro.props;
-const items = featuredOnly ? works.filter((work) => work.featured) : works;
+const sourceItems = featuredOnly ? works.filter((work) => work.featured) : works;
+const items = [...sourceItems].sort(
+  (left, right) => Number(Boolean(right.cover)) - Number(Boolean(left.cover))
+);
 const labels = categoryLabels[lang];
 ---
 
