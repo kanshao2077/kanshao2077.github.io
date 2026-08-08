@@ -358,6 +358,162 @@ export const works = [
     }
   },
   {
+    id: "shupian",
+    category: "vibe",
+    featured: false,
+    cover: "",
+    href: "https://github.com/kanshao2077/shupian",
+    zh: {
+      title: "薯片",
+      deck: "把长文、短句和图片排成 3:4 小红书卡片，并辅助填入小红书创作后台。",
+      role: "产品设计、卡片排版、浏览器插件与发布流程",
+      result: "完成从内容编辑、卡片导出到小红书后台填充的一体化工具",
+      proof: "这个作品证明：我能把内容生产和平台发布连接成完整、可控的工作流。",
+      tools: ["JavaScript", "Browser Extension", "Content Workflow", "GitHub Pages"],
+      cta: "查看仓库"
+    },
+    en: {
+      title: "Shupian",
+      deck: "Turns long-form text, short copy, and images into 3:4 Xiaohongshu cards and assists with creator-studio publishing.",
+      role: "Product design, card layout, browser extension, publishing workflow",
+      result: "Built an integrated workflow from content editing and card export to Xiaohongshu draft filling",
+      proof:
+        "This work proves that I can connect content production and platform publishing into a controlled end-to-end workflow.",
+      tools: ["JavaScript", "Browser Extension", "Content Workflow", "GitHub Pages"],
+      cta: "View Repository"
+    }
+  },
+  {
+    id: "echo-card",
+    category: "vibe",
+    featured: false,
+    cover: "",
+    href: "https://github.com/kanshao2077/echo-card",
+    zh: {
+      title: "回声卡",
+      deck: "把值得分享的 AI 回答排成 1080 × 1440 文字卡片，支持复制或下载 PNG。",
+      role: "产品设计、模板系统、前端实现",
+      result: "完成一款本地处理、支持多种模型与视觉模板的分享卡片工具",
+      proof: "这个作品证明：我能把 AI 对话内容转化成适合社交传播的视觉产品。",
+      tools: ["JavaScript", "Canvas", "Local-first", "GitHub Pages"],
+      cta: "查看仓库"
+    },
+    en: {
+      title: "Echo Card",
+      deck: "Turns share-worthy AI answers into 1080 × 1440 text cards that can be copied or downloaded as PNG files.",
+      role: "Product design, template system, frontend implementation",
+      result: "Built a local-first sharing tool with multiple model sources and visual templates",
+      proof:
+        "This work proves that I can translate AI conversation content into a visual product designed for social distribution.",
+      tools: ["JavaScript", "Canvas", "Local-first", "GitHub Pages"],
+      cta: "View Repository"
+    }
+  },
+  {
+    id: "jike-timeline-epub",
+    category: "vibe",
+    featured: false,
+    cover: "",
+    href: "https://github.com/kanshao2077/jike-timeline-epub",
+    zh: {
+      title: "即刻小书摊",
+      deck: "把即刻用户时间线按日期采集并导出为排版干净、可导入微信读书的 EPUB。",
+      role: "扩展设计、时间线采集、EPUB 生成与验证",
+      result: "完成支持日期筛选、预览和断点恢复的本地 Chrome 扩展",
+      proof: "这个作品证明：我能把碎片化平台内容整理成更适合长期阅读和收藏的格式。",
+      tools: ["Chrome Extension", "JavaScript", "EPUB", "Local Storage"],
+      cta: "查看仓库"
+    },
+    en: {
+      title: "Jike Timeline EPUB",
+      deck: "Collects a Jike user's timeline by date and exports a clean EPUB ready for long-form reading apps.",
+      role: "Extension design, timeline collection, EPUB generation and validation",
+      result: "Built a local Chrome extension with date filters, previews, and session recovery",
+      proof:
+        "This work proves that I can reorganize fragmented platform content into a format suited for long-term reading and archiving.",
+      tools: ["Chrome Extension", "JavaScript", "EPUB", "Local Storage"],
+      cta: "View Repository"
+    }
+  },
+  {
+    id: "weibo-timeline-epub",
+    category: "vibe",
+    featured: false,
+    cover: "",
+    href: "https://github.com/kanshao2077/weibo-timeline-epub",
+    zh: {
+      title: "微博小书摊",
+      deck: "在本地浏览器采集公开可见的微博时间线，并导出成可保存、可阅读的 EPUB。",
+      role: "扩展设计、登录态采集、EPUB 导出",
+      result: "完成不上传内容、不保存账号密码的微博时间线导出工具",
+      proof: "这个作品证明：我能在隐私和平台限制下设计实用的个人信息归档工具。",
+      tools: ["Chrome Extension", "JavaScript", "EPUB", "Privacy"],
+      cta: "查看仓库"
+    },
+    en: {
+      title: "Weibo Timeline EPUB",
+      deck: "Collects publicly visible Weibo timelines inside the local browser and exports them as readable EPUB books.",
+      role: "Extension design, authenticated collection, EPUB export",
+      result: "Built a timeline exporter that uploads no content and stores no account credentials",
+      proof:
+        "This work proves that I can design practical personal archiving tools within privacy and platform constraints.",
+      tools: ["Chrome Extension", "JavaScript", "EPUB", "Privacy"],
+      cta: "View Repository"
+    }
+  },
+  {
+    id: "da-wenti",
+    category: "vibe",
+    featured: false,
+    cover: "",
+    href: "https://github.com/kanshao2077/da-wenti",
+    zh: {
+      title: "大问题",
+      deck: "记录每天的问题、答案、追问和总结，让短暂的好奇心变成可以长期回看的思考档案。",
+      role: "产品概念、信息结构、AI 功能与数据存储",
+      result: "完成支持统计、收藏、追问和分享卡片的好奇心日记原型",
+      proof: "这个作品证明：我能把抽象的自我探索需求设计成有连续性的数字工具。",
+      tools: ["Next.js", "Supabase", "AI Workflow", "Product Prototype"],
+      cta: "查看仓库"
+    },
+    en: {
+      title: "Da Wenti",
+      deck: "Records daily questions, answers, follow-ups, and reflections so passing curiosity becomes a lasting thinking archive.",
+      role: "Product concept, information structure, AI features, data storage",
+      result: "Built a curiosity-journal prototype with statistics, favorites, follow-ups, and share cards",
+      proof:
+        "This work proves that I can turn an abstract self-exploration need into a continuous digital tool.",
+      tools: ["Next.js", "Supabase", "AI Workflow", "Product Prototype"],
+      cta: "View Repository"
+    }
+  },
+  {
+    id: "personal-site",
+    category: "vibe",
+    featured: false,
+    cover: "",
+    href: "https://github.com/kanshao2077/kanshao2077.github.io",
+    zh: {
+      title: "侃少 2077 个人网站",
+      deck: "使用 Astro、TypeScript 和原生 CSS 构建的双语个人网站，也是全部作品的持续更新入口。",
+      role: "内容架构、视觉设计、前端实现与 GitHub Pages 部署",
+      result: "完成支持双语内容、自定义域名和自动部署的个人作品站",
+      proof: "这个作品证明：我能独立完成个人品牌内容的组织、设计、开发和发布。",
+      tools: ["Astro", "TypeScript", "CSS", "GitHub Pages"],
+      cta: "查看仓库"
+    },
+    en: {
+      title: "Kanshao 2077 Personal Site",
+      deck: "A bilingual personal website built with Astro, TypeScript, and native CSS, serving as the evolving home for all projects.",
+      role: "Content architecture, visual design, frontend implementation, GitHub Pages deployment",
+      result: "Built a bilingual portfolio with a custom domain and automated deployment",
+      proof:
+        "This work proves that I can independently organize, design, build, and publish a personal brand experience.",
+      tools: ["Astro", "TypeScript", "CSS", "GitHub Pages"],
+      cta: "View Repository"
+    }
+  },
+  {
     id: "hangzhou-stardew",
     category: "aigc",
     featured: true,
@@ -668,6 +824,136 @@ export const works = [
       proof:
         "This work proves that I can standardize cleanup, building, configuration, and verification in frontend publishing.",
       tools: ["GitHub Pages", "GitHub Actions", "Vite", "Automation"],
+      cta: "View Skill"
+    }
+  },
+  {
+    id: "cover-skill",
+    category: "skill",
+    featured: false,
+    cover: "",
+    href: "https://github.com/kanshao2077/CoverSkill",
+    zh: {
+      title: "CoverSkill",
+      deck: "根据内容逐步确认风格、人物、背景和字体，生成可直接用于图片模型的小红书封面提示词。",
+      role: "封面方法、交互流程、视觉规则与 Skill 实现",
+      result: "形成覆盖八种常见小红书封面风格的提示词生成 Skill",
+      proof: "这个作品证明：我能把封面设计判断整理成用户可以逐步完成的生成流程。",
+      tools: ["Codex Skill", "Prompt Design", "Visual Direction", "Xiaohongshu"],
+      cta: "查看 Skill"
+    },
+    en: {
+      title: "CoverSkill",
+      deck: "Guides users through style, subject, background, and typography choices to produce image-model-ready Xiaohongshu cover prompts.",
+      role: "Cover methodology, interaction flow, visual rules, Skill implementation",
+      result: "Built a prompt-generation Skill covering eight common Xiaohongshu cover styles",
+      proof:
+        "This work proves that I can turn cover-design judgment into a guided and executable generation process.",
+      tools: ["Codex Skill", "Prompt Design", "Visual Direction", "Xiaohongshu"],
+      cta: "View Skill"
+    }
+  },
+  {
+    id: "short-sentence-layout-skill",
+    category: "skill",
+    featured: false,
+    cover: "",
+    href: "https://github.com/kanshao2077/short-sentence-layout-skill",
+    zh: {
+      title: "短句排版 Skill",
+      deck: "不改写、不删减原文，把长段落按语义拆成适合手机扫读的十三字以内短句。",
+      role: "排版规则、内容类型适配、保真检查脚本",
+      result: "形成支持观点、故事、教程、口播等内容的移动端排版 Skill",
+      proof: "这个作品证明：我能把中文阅读体验中的细节判断做成稳定、可验证的规则。",
+      tools: ["Codex Skill", "Python", "Chinese Typography", "Content Formatting"],
+      cta: "查看 Skill"
+    },
+    en: {
+      title: "Short Sentence Layout Skill",
+      deck: "Preserves every word while breaking dense Chinese paragraphs into semantic, mobile-friendly lines of up to thirteen characters.",
+      role: "Layout rules, content-type adaptation, fidelity validation script",
+      result: "Built a mobile formatting Skill for essays, stories, tutorials, voice scripts, and more",
+      proof:
+        "This work proves that I can turn nuanced Chinese reading-experience judgment into stable and verifiable rules.",
+      tools: ["Codex Skill", "Python", "Chinese Typography", "Content Formatting"],
+      cta: "View Skill"
+    }
+  },
+  {
+    id: "kanshao-writing-skill",
+    category: "skill",
+    featured: false,
+    cover: "",
+    href: "https://github.com/kanshao2077/kanshao-writing-skill",
+    zh: {
+      title: "侃少写作 Skill",
+      deck: "基于真实材料和个人判断完成中文写作、改写与跨平台适配，避免虚构经历和模板化表达。",
+      role: "个人写作方法、事实边界、编辑规则与 Skill 实现",
+      result: "形成适配公众号、观点短文和社交平台内容的个人写作助手",
+      proof: "这个作品证明：我能把自己的写作经验明确成可执行的方法，同时保留人的判断权。",
+      tools: ["Codex Skill", "Chinese Writing", "Editing", "Content Adaptation"],
+      cta: "查看 Skill"
+    },
+    en: {
+      title: "Kanshao Writing Skill",
+      deck: "Writes, rewrites, and adapts Chinese content from real material and personal judgment without inventing experience or using formulaic prose.",
+      role: "Personal writing method, factual boundaries, editing rules, Skill implementation",
+      result: "Built a personal writing assistant for WeChat essays, opinion pieces, and social content",
+      proof:
+        "This work proves that I can formalize my writing experience into an executable method while preserving human judgment.",
+      tools: ["Codex Skill", "Chinese Writing", "Editing", "Content Adaptation"],
+      cta: "View Skill"
+    }
+  },
+  {
+    id: "jibu-li-ke-shi",
+    category: "skill",
+    featured: false,
+    cover: "",
+    href: "https://github.com/kanshao2077/jibu-li-ke-shi",
+    zh: {
+      title: "吉卜力可视",
+      deck: "把文章、活动介绍和数据摘要整理成自然水彩感、可截图分享的动态中文网页。",
+      role: "信息提炼、视觉系统、响应式网页生成规则",
+      result: "形成从文本内容到独立 HTML 可视化页面的生成 Skill",
+      proof: "这个作品证明：我能把信息结构和视觉表达组合成可复用的网页生成方法。",
+      tools: ["Codex Skill", "HTML", "Tailwind CSS", "Data Visualization"],
+      cta: "查看 Skill"
+    },
+    en: {
+      title: "Jibu Visualizer",
+      deck: "Turns articles, event briefs, and data summaries into dynamic Chinese webpages with a natural watercolor visual language.",
+      role: "Information extraction, visual system, responsive webpage generation rules",
+      result: "Built a generation Skill that turns source text into standalone HTML visualizations",
+      proof:
+        "This work proves that I can combine information structure and visual expression into a reusable webpage-generation method.",
+      tools: ["Codex Skill", "HTML", "Tailwind CSS", "Data Visualization"],
+      cta: "View Skill"
+    }
+  },
+  {
+    id: "huituan-codex-pet",
+    category: "skill",
+    featured: false,
+    cover: "",
+    href: "https://github.com/kanshao2077/huituan-codex-pet",
+    zh: {
+      title: "灰团 Huituan · Codex Desktop Pet",
+      deck: "保存可迁移的灰团桌面宠物，并提供创建、校验、打包和安装 Codex v2 宠物的完整 Skill。",
+      role: "角色资产、动画规范、校验工具与跨平台安装流程",
+      result: "完成桌面宠物成品、发布包、验证脚本和可复用 Hatch Pet Skill",
+      proof: "这个作品证明：我能把创意角色从视觉资产推进到可验证、可迁移的软件包。",
+      tools: ["Python", "Codex Skill", "Sprite Animation", "Packaging"],
+      cta: "查看 Skill"
+    },
+    en: {
+      title: "Huituan · Codex Desktop Pet",
+      deck: "Preserves a portable Huituan desktop pet and provides a complete Skill for creating, validating, packaging, and installing Codex v2 pets.",
+      role: "Character assets, animation contract, validation tools, cross-platform installation",
+      result: "Shipped the desktop pet, release package, validation scripts, and reusable Hatch Pet Skill",
+      proof:
+        "This work proves that I can carry a creative character from visual assets to a validated and portable software package.",
+      tools: ["Python", "Codex Skill", "Sprite Animation", "Packaging"],
       cta: "View Skill"
     }
   }
