@@ -1,5 +1,5 @@
 export type Lang = "zh" | "en";
-export type WorkCategory = "aigc" | "articles" | "vibe";
+export type WorkCategory = "aigc" | "articles" | "vibe" | "skill";
 
 export const languages: Record<Lang, { label: string; switchLabel: string; locale: string }> = {
   zh: {
@@ -36,13 +36,15 @@ export const categoryLabels: Record<Lang, Record<"all" | WorkCategory, string>> 
     all: "All",
     aigc: "AIGC",
     articles: "Articles",
-    vibe: "Vibe Coding"
+    vibe: "Vibe Coding",
+    skill: "Skill"
   },
   en: {
     all: "All",
     aigc: "AIGC",
     articles: "Articles",
-    vibe: "Vibe Coding"
+    vibe: "Vibe Coding",
+    skill: "Skill"
   }
 };
 
@@ -511,6 +513,162 @@ export const works = [
         "This work proves that I can review tool changes and turn experience into transferable methods.",
       tools: ["Feishu", "AI Writing", "Workflow", "Reflection"],
       cta: "Read Original"
+    }
+  },
+  {
+    id: "xhs-title-skill",
+    category: "skill",
+    featured: false,
+    cover: "",
+    href: "https://github.com/kanshao2077/xhs-title-skill",
+    zh: {
+      title: "小红书标题 Skill",
+      deck: "从正文生成不同传播方向的标题，完成诊断、筛选、排序和单变量 A/B 备选。",
+      role: "方法设计、平台规则整理、Skill 实现",
+      result: "形成可安装、可复用的小红书标题工作流",
+      proof: "这个作品证明：我能把内容增长中的标题判断拆成可执行、可复用的 Agent 工作流。",
+      tools: ["Codex Skill", "Content Growth", "A/B Testing", "Xiaohongshu"],
+      cta: "查看 Skill"
+    },
+    en: {
+      title: "Xiaohongshu Title Skill",
+      deck: "Generates distinct title directions from a draft, then diagnoses, ranks, and creates single-variable A/B options.",
+      role: "Method design, platform rules, Skill implementation",
+      result: "Built an installable and reusable Xiaohongshu title workflow",
+      proof:
+        "This work proves that I can turn title judgment in content growth into an executable Agent workflow.",
+      tools: ["Codex Skill", "Content Growth", "A/B Testing", "Xiaohongshu"],
+      cta: "View Skill"
+    }
+  },
+  {
+    id: "shot-doctor",
+    category: "skill",
+    featured: false,
+    cover: "",
+    href: "https://github.com/kanshao2077/shot-doctor",
+    zh: {
+      title: "Shot Doctor 镜头医生",
+      deck: "把自然语言、剧本、分镜和参考素材编译成精简、可执行、平台适配的 AIGC 视频提示词。",
+      role: "影视提示词方法、平台适配、Skill 架构",
+      result: "形成覆盖多模式、多镜头和主流视频平台的提示词工作流",
+      proof: "这个作品证明：我能把影视语言、连续性和平台约束转译成可执行的生成指令。",
+      tools: ["AIGC Video", "Prompt Engineering", "Storyboard", "Platform Adapters"],
+      cta: "查看 Skill"
+    },
+    en: {
+      title: "Shot Doctor",
+      deck: "Compiles ideas, scripts, storyboards, and references into concise, executable, platform-ready AIGC video prompts.",
+      role: "Cinematic prompting, platform adaptation, Skill architecture",
+      result: "Built a prompt workflow covering multiple modes, shots, and major video platforms",
+      proof:
+        "This work proves that I can translate cinematic language, continuity, and platform constraints into executable generation instructions.",
+      tools: ["AIGC Video", "Prompt Engineering", "Storyboard", "Platform Adapters"],
+      cta: "View Skill"
+    }
+  },
+  {
+    id: "podlink",
+    category: "skill",
+    featured: false,
+    cover: "",
+    href: "https://github.com/kanshao2077/PodLink",
+    zh: {
+      title: "PodLink",
+      deck: "从公开播客单集页提取并验证真实音频直链，直接交给转写工具使用。",
+      role: "提取流程、验证脚本、跨 Agent 适配",
+      result: "完成无需第三方依赖的播客音频直链提取 Skill",
+      proof: "这个作品证明：我能把繁琐的网页和 RSS 排查做成可验证的自动化工具。",
+      tools: ["Python", "Podcast", "RSS", "URL Verification"],
+      cta: "查看 Skill"
+    },
+    en: {
+      title: "PodLink",
+      deck: "Extracts and verifies real audio URLs from public podcast episode pages for direct use in transcription tools.",
+      role: "Extraction workflow, verification script, cross-Agent adaptation",
+      result: "Built a podcast audio URL extraction Skill with no third-party dependencies",
+      proof:
+        "This work proves that I can turn tedious webpage and RSS inspection into a verifiable automation tool.",
+      tools: ["Python", "Podcast", "RSS", "URL Verification"],
+      cta: "View Skill"
+    }
+  },
+  {
+    id: "article-juicer-skill",
+    category: "skill",
+    featured: false,
+    cover: "",
+    href: "https://github.com/kanshao2077/article-juicer-skill",
+    zh: {
+      title: "文章榨汁机",
+      deck: "把长文章、帖子和评论区重建成精华、批判审视、金句和可发布的个人回响。",
+      role: "内容分析框架、输出结构、中文表达规则",
+      result: "形成面向多种长文本的高密度提炼 Skill",
+      proof: "这个作品证明：我能把阅读和内容再加工流程沉淀成结构化方法。",
+      tools: ["Codex Skill", "Content Analysis", "Long-form", "Writing"],
+      cta: "查看 Skill"
+    },
+    en: {
+      title: "Article Juicer",
+      deck: "Reconstructs long articles, posts, and comments into concise insight, critical review, quotes, and publishable reflection.",
+      role: "Content-analysis framework, output structure, Chinese writing rules",
+      result: "Built a high-density extraction Skill for multiple long-form formats",
+      proof:
+        "This work proves that I can turn reading and content repurposing into a structured method.",
+      tools: ["Codex Skill", "Content Analysis", "Long-form", "Writing"],
+      cta: "View Skill"
+    }
+  },
+  {
+    id: "deep-research-skill",
+    category: "skill",
+    featured: false,
+    cover: "",
+    href: "https://github.com/kanshao2077/deep-research-skill",
+    zh: {
+      title: "深度调研 Skill",
+      deck: "围绕决策拆解问题，按信源权重交叉验证，并输出带置信度和审计记录的结论。",
+      role: "调研框架、信源权重、验证脚本",
+      result: "形成适配中国大陆场景的多信源调研 Skill",
+      proof: "这个作品证明：我能把搜索升级成可追溯、可验证的研究流程。",
+      tools: ["Deep Research", "Source Weighting", "Fact Checking", "Python"],
+      cta: "查看 Skill"
+    },
+    en: {
+      title: "Deep Research Skill",
+      deck: "Breaks decisions into research questions, cross-checks weighted sources, and reports confidence with an audit trail.",
+      role: "Research framework, source weighting, verification scripts",
+      result: "Built a multi-source research Skill adapted for mainland China contexts",
+      proof:
+        "This work proves that I can turn search into a traceable and verifiable research process.",
+      tools: ["Deep Research", "Source Weighting", "Fact Checking", "Python"],
+      cta: "View Skill"
+    }
+  },
+  {
+    id: "deploy-skill",
+    category: "skill",
+    featured: false,
+    cover: "",
+    href: "https://github.com/kanshao2077/deploy-skill",
+    zh: {
+      title: "Deploy Skill",
+      deck: "把 Coze / 秒哒导出的 Vite / React 静态前端整理并自动发布到 GitHub Pages。",
+      role: "部署流程、GitHub Actions、风险检查",
+      result: "形成从源码包到在线 Pages 站点的可复用部署 Skill",
+      proof: "这个作品证明：我能把前端发布中的清理、构建、配置和验证做成标准流程。",
+      tools: ["GitHub Pages", "GitHub Actions", "Vite", "Automation"],
+      cta: "查看 Skill"
+    },
+    en: {
+      title: "Deploy Skill",
+      deck: "Prepares Coze or Miaoda Vite/React exports and publishes them automatically to GitHub Pages.",
+      role: "Deployment workflow, GitHub Actions, risk checks",
+      result: "Built a reusable workflow from source package to a live Pages site",
+      proof:
+        "This work proves that I can standardize cleanup, building, configuration, and verification in frontend publishing.",
+      tools: ["GitHub Pages", "GitHub Actions", "Vite", "Automation"],
+      cta: "View Skill"
     }
   }
 ] satisfies Array<{
