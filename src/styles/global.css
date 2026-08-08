@@ -1406,6 +1406,18 @@ p {
     padding-top: 8px;
   }
 
+  .filter-bar {
+    width: 100%;
+    gap: 4px;
+  }
+
+  .filter-bar button {
+    flex: 1 1 auto;
+    min-width: 0;
+    padding: 0 6px;
+    white-space: nowrap;
+  }
+
   h1 {
     font-size: 46px;
   }
