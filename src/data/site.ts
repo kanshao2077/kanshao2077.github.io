@@ -704,7 +704,7 @@ export const works = [
     cover: "",
     href: "https://github.com/kanshao2077/shot-doctor",
     zh: {
-      title: "Shot Doctor 镜头医生",
+      title: "镜头医生",
       deck: "把自然语言、剧本、分镜和参考素材编译成精简、可执行、平台适配的 AIGC 视频提示词。",
       role: "影视提示词方法、平台适配、Skill 架构",
       result: "形成覆盖多模式、多镜头和主流视频平台的提示词工作流",
@@ -912,7 +912,7 @@ export const works = [
     cover: "",
     href: "https://github.com/kanshao2077/jibu-li-ke-shi",
     zh: {
-      title: "吉卜力可视",
+      title: "吉卜力风格可视化 Skill",
       deck: "把文章、活动介绍和数据摘要整理成自然水彩感、可截图分享的动态中文网页。",
       role: "信息提炼、视觉系统、响应式网页生成规则",
       result: "形成从文本内容到独立 HTML 可视化页面的生成 Skill",
@@ -921,7 +921,7 @@ export const works = [
       cta: "查看 Skill"
     },
     en: {
-      title: "Jibu Visualizer",
+      title: "Ghibli-style Visualization Skill",
       deck: "Turns articles, event briefs, and data summaries into dynamic Chinese webpages with a natural watercolor visual language.",
       role: "Information extraction, visual system, responsive webpage generation rules",
       result: "Built a generation Skill that turns source text into standalone HTML visualizations",
@@ -938,7 +938,7 @@ export const works = [
     cover: "",
     href: "https://github.com/kanshao2077/huituan-codex-pet",
     zh: {
-      title: "灰团 Huituan · Codex Desktop Pet",
+      title: "Codex 桌宠 Skill",
       deck: "保存可迁移的灰团桌面宠物，并提供创建、校验、打包和安装 Codex v2 宠物的完整 Skill。",
       role: "角色资产、动画规范、校验工具与跨平台安装流程",
       result: "完成桌面宠物成品、发布包、验证脚本和可复用 Hatch Pet Skill",
@@ -947,7 +947,7 @@ export const works = [
       cta: "查看 Skill"
     },
     en: {
-      title: "Huituan · Codex Desktop Pet",
+      title: "Codex Desktop Pet Skill",
       deck: "Preserves a portable Huituan desktop pet and provides a complete Skill for creating, validating, packaging, and installing Codex v2 pets.",
       role: "Character assets, animation contract, validation tools, cross-platform installation",
       result: "Shipped the desktop pet, release package, validation scripts, and reusable Hatch Pet Skill",
