@@ -998,33 +998,14 @@ p {
   color: var(--white);
 }
 
-.contact-icon svg {
+.contact-icon img {
   width: 28px;
   height: 28px;
-  fill: none;
-  stroke: currentColor;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-width: 1.8;
+  object-fit: contain;
 }
 
-.tone-github .contact-icon svg {
-  fill: currentColor;
-  stroke: none;
-}
-
-.logo-letter {
-  font-family: var(--font-mono);
-  font-size: 26px;
-  font-weight: 700;
-  line-height: 1;
-}
-
-.logo-letter-cn {
-  font-family: var(--font-sans);
-  font-size: 13px;
-  font-weight: 800;
-  letter-spacing: 0;
+.contact-icon img[src$=".svg"] {
+  filter: brightness(0) invert(1);
 }
 
 .contact-card-copy {
@@ -1107,8 +1088,8 @@ p {
 }
 
 .tone-jike .contact-icon {
-  background: #ffd21e;
-  color: #1683ff;
+  border: 0;
+  background: transparent;
 }
 
 .tone-douban .contact-icon {
@@ -1116,7 +1097,14 @@ p {
 }
 
 .tone-sspai .contact-icon {
-  background: #d71920;
+  border: 0;
+  background: transparent;
+}
+
+.tone-jike .contact-icon img,
+.tone-sspai .contact-icon img {
+  width: 100%;
+  height: 100%;
 }
 
 .site-footer {
@@ -1540,17 +1528,9 @@ p {
     border-radius: 14px;
   }
 
-  .contact-icon svg {
+  .contact-icon img {
     width: 28px;
     height: 28px;
-  }
-
-  .logo-letter {
-    font-size: 25px;
-  }
-
-  .logo-letter-cn {
-    font-size: 13px;
   }
 
   .contact-card-copy strong {
