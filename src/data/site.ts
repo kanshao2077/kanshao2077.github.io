@@ -649,7 +649,7 @@ export const works = [
     id: "feishu-personal-manual",
     category: "articles",
     featured: false,
-    cover: "",
+    cover: "/covers/feishu-personal-handbook.png",
     href: "https://my.feishu.cn/wiki/EnK5wYzdsiRJlJkD2Smcml7zn8f",
     zh: {
       title: "我的飞书个人说明书",
@@ -675,25 +675,25 @@ export const works = [
     id: "xhs-title-skill",
     category: "skill",
     featured: false,
-    cover: "",
+    cover: "/covers/social-media-title-skill.png",
     href: "https://github.com/kanshao2077/xhs-title-skill",
     zh: {
-      title: "小红书标题 Skill",
+      title: "自媒体爆款标题 Skill",
       deck: "从正文生成不同传播方向的标题，完成诊断、筛选、排序和单变量 A/B 备选。",
       role: "方法设计、平台规则整理、Skill 实现",
-      result: "形成可安装、可复用的小红书标题工作流",
+      result: "形成可安装、可复用的自媒体标题工作流",
       proof: "这个作品证明：我能把内容增长中的标题判断拆成可执行、可复用的 Agent 工作流。",
-      tools: ["Codex Skill", "Content Growth", "A/B Testing", "Xiaohongshu"],
+      tools: ["Codex Skill", "Content Growth", "A/B Testing", "Social Media"],
       cta: "查看 Skill"
     },
     en: {
-      title: "Xiaohongshu Title Skill",
+      title: "Social Media Viral Title Skill",
       deck: "Generates distinct title directions from a draft, then diagnoses, ranks, and creates single-variable A/B options.",
       role: "Method design, platform rules, Skill implementation",
-      result: "Built an installable and reusable Xiaohongshu title workflow",
+      result: "Built an installable and reusable social media title workflow",
       proof:
         "This work proves that I can turn title judgment in content growth into an executable Agent workflow.",
-      tools: ["Codex Skill", "Content Growth", "A/B Testing", "Xiaohongshu"],
+      tools: ["Codex Skill", "Content Growth", "A/B Testing", "Social Media"],
       cta: "View Skill"
     }
   },
@@ -727,7 +727,7 @@ export const works = [
     id: "podlink",
     category: "skill",
     featured: false,
-    cover: "",
+    cover: "/covers/podlink.png",
     href: "https://github.com/kanshao2077/PodLink",
     zh: {
       title: "PodLink",
@@ -753,7 +753,7 @@ export const works = [
     id: "article-juicer-skill",
     category: "skill",
     featured: false,
-    cover: "",
+    cover: "/covers/article-juicer-skill.png",
     href: "https://github.com/kanshao2077/article-juicer-skill",
     zh: {
       title: "文章榨汁机",
@@ -935,7 +935,7 @@ export const works = [
     id: "huituan-codex-pet",
     category: "skill",
     featured: false,
-    cover: "",
+    cover: "/covers/codex-desktop-pet-skill.png",
     href: "https://github.com/kanshao2077/huituan-codex-pet",
     zh: {
       title: "Codex 桌宠 Skill",
