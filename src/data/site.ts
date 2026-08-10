@@ -231,7 +231,7 @@ export const works = [
     id: "flowpost",
     category: "vibe",
     featured: true,
-    cover: "/covers/flowpost-cover.png",
+    cover: "/covers/flowpost-cover-1200.webp",
     href: "https://github.com/kanshao2077/Flowpost",
     zh: {
       title: "FlowPost",
@@ -257,7 +257,7 @@ export const works = [
     id: "jianbai",
     category: "vibe",
     featured: false,
-    cover: "/covers/jianbai-cover.png",
+    cover: "/covers/jianbai-cover-1200.webp",
     href: "https://kanshao2077.github.io/jianbai/",
     zh: {
       title: "见白 Jian Bai",
@@ -283,7 +283,7 @@ export const works = [
     id: "pixel-prompt",
     category: "vibe",
     featured: true,
-    cover: "/covers/pixel-prompt-cover.png",
+    cover: "/covers/pixel-prompt-cover-1200.webp",
     href: "https://kanshao2077.github.io/pixel-prompt/",
     zh: {
       title: "PixelPrompt",
@@ -309,7 +309,7 @@ export const works = [
     id: "rewrite-studio",
     category: "vibe",
     featured: false,
-    cover: "/covers/rewrite-studio-cover.png",
+    cover: "/covers/rewrite-studio-cover-1200.webp",
     href: "https://kanshao2077.github.io/rewrite-studio/",
     zh: {
       title: "Rewrite Studio",
@@ -335,7 +335,7 @@ export const works = [
     id: "xuan-ni-mei",
     category: "vibe",
     featured: false,
-    cover: "/covers/xuan-ni-mei-cover.png",
+    cover: "/covers/xuan-ni-mei-cover-1200.webp",
     href: "https://kanshao2077.github.io/xuan-ni-mei/",
     zh: {
       title: "选你妹",
@@ -361,7 +361,7 @@ export const works = [
     id: "shupian",
     category: "vibe",
     featured: false,
-    cover: "/covers/shupian.png",
+    cover: "/covers/shupian-1200.webp",
     href: "https://github.com/kanshao2077/shupian",
     zh: {
       title: "薯片",
@@ -387,7 +387,7 @@ export const works = [
     id: "echo-card",
     category: "vibe",
     featured: false,
-    cover: "/covers/echo-card.png",
+    cover: "/covers/echo-card-1200.webp",
     href: "https://github.com/kanshao2077/echo-card",
     zh: {
       title: "回声卡",
@@ -413,7 +413,7 @@ export const works = [
     id: "jike-timeline-epub",
     category: "vibe",
     featured: false,
-    cover: "/covers/jike-timeline-epub.png",
+    cover: "/covers/jike-timeline-epub-1200.webp",
     href: "https://github.com/kanshao2077/jike-timeline-epub",
     zh: {
       title: "即刻小书摊",
@@ -439,7 +439,7 @@ export const works = [
     id: "weibo-timeline-epub",
     category: "vibe",
     featured: false,
-    cover: "/covers/weibo-timeline-epub.png",
+    cover: "/covers/weibo-timeline-epub-1200.webp",
     href: "https://github.com/kanshao2077/weibo-timeline-epub",
     zh: {
       title: "微博小书摊",
@@ -465,7 +465,7 @@ export const works = [
     id: "hangzhou-stardew",
     category: "aigc",
     featured: true,
-    cover: "/covers/aigc-hangzhou-stardew.jpg",
+    cover: "/covers/aigc-hangzhou-stardew-1200.webp",
     href:
       "https://www.xiaohongshu.com/discovery/item/680b1ffd000000000f032eb3?source=webshare&xhsshare=pc_web&xsec_token=ABAE_OfYZaOghGGKb6BVP_QwKVjFexE43N6B3eTpt6TQw=&xsec_source=pc_share",
     zh: {
@@ -492,7 +492,7 @@ export const works = [
     id: "wuhan-stardew",
     category: "aigc",
     featured: false,
-    cover: "/covers/aigc-wuhan-stardew.jpg",
+    cover: "/covers/aigc-wuhan-stardew-1200.webp",
     href:
       "https://www.xiaohongshu.com/discovery/item/680c5636000000000900da2a?source=webshare&xhsshare=pc_web&xsec_token=ABlB2XLqxxrJeU6tBJ98PwIlQ1_ZGPX65OGCg1if_kqjk=&xsec_source=pc_share",
     zh: {
@@ -519,7 +519,7 @@ export const works = [
     id: "no-one-owes-you-a-good-era",
     category: "articles",
     featured: false,
-    cover: "/covers/article-no-one-owes-you-a-good-era.png",
+    cover: "/covers/article-no-one-owes-you-a-good-era-1200.webp",
     href: "https://mp.weixin.qq.com/s/FMZ8SFGzLau79zvQ0td9IQ",
     zh: {
       title: "没人欠你一个好时代",
@@ -545,7 +545,7 @@ export const works = [
     id: "keep-the-fire",
     category: "articles",
     featured: false,
-    cover: "/covers/article-keep-the-fire.jpg",
+    cover: "/covers/article-keep-the-fire-1200.webp",
     href: "https://mp.weixin.qq.com/s/Wi6JDbZBKTJ_J2H-A8OV-Q",
     zh: {
       title: "鸡血要常有",
@@ -571,7 +571,7 @@ export const works = [
     id: "before-2026",
     category: "articles",
     featured: false,
-    cover: "/covers/article-before-2026.png",
+    cover: "/covers/article-before-2026-1200.webp",
     href: "https://mp.weixin.qq.com/s/OtTYEJqzBeKcmNixoCmGSA",
     zh: {
       title: "写在 2026 之前",
@@ -597,7 +597,7 @@ export const works = [
     id: "ai-writing-after-old-experience",
     category: "articles",
     featured: true,
-    cover: "/covers/article-ai-writing-after-old-experience.jpg",
+    cover: "/covers/article-ai-writing-after-old-experience-1200.webp",
     href: "https://my.feishu.cn/wiki/UsipwzUvYiyQg5kymVYcBs98nxG",
     zh: {
       title: "旧经验失效之后，我怎么继续用 AI 写作",
@@ -623,7 +623,7 @@ export const works = [
     id: "feishu-personal-manual",
     category: "articles",
     featured: false,
-    cover: "/covers/feishu-personal-handbook.png",
+    cover: "/covers/feishu-personal-handbook-1200.webp",
     href: "https://my.feishu.cn/wiki/EnK5wYzdsiRJlJkD2Smcml7zn8f",
     zh: {
       title: "我的飞书个人说明书",
@@ -649,7 +649,7 @@ export const works = [
     id: "xhs-title-skill",
     category: "skill",
     featured: false,
-    cover: "/covers/social-media-title-skill.png",
+    cover: "/covers/social-media-title-skill-1200.webp",
     href: "https://github.com/kanshao2077/xhs-title-skill",
     zh: {
       title: "自媒体爆款标题 Skill",
@@ -675,7 +675,7 @@ export const works = [
     id: "shot-doctor",
     category: "skill",
     featured: false,
-    cover: "/covers/shot-doctor.png",
+    cover: "/covers/shot-doctor-1200.webp",
     href: "https://github.com/kanshao2077/shot-doctor",
     zh: {
       title: "镜头医生",
@@ -701,7 +701,7 @@ export const works = [
     id: "podlink",
     category: "skill",
     featured: false,
-    cover: "/covers/podlink.png",
+    cover: "/covers/podlink-1200.webp",
     href: "https://github.com/kanshao2077/PodLink",
     zh: {
       title: "PodLink",
@@ -727,7 +727,7 @@ export const works = [
     id: "article-juicer-skill",
     category: "skill",
     featured: false,
-    cover: "/covers/article-juicer-skill.png",
+    cover: "/covers/article-juicer-skill-1200.webp",
     href: "https://github.com/kanshao2077/article-juicer-skill",
     zh: {
       title: "文章榨汁机",
@@ -753,7 +753,7 @@ export const works = [
     id: "deep-research-skill",
     category: "skill",
     featured: false,
-    cover: "/covers/deep-research-skill.png",
+    cover: "/covers/deep-research-skill-1200.webp",
     href: "https://github.com/kanshao2077/deep-research-skill",
     zh: {
       title: "深度调研 Skill",
@@ -779,7 +779,7 @@ export const works = [
     id: "cover-skill",
     category: "skill",
     featured: false,
-    cover: "/covers/cover-skill.png",
+    cover: "/covers/cover-skill-1200.webp",
     href: "https://github.com/kanshao2077/CoverSkill",
     zh: {
       title: "CoverSkill",
@@ -805,7 +805,7 @@ export const works = [
     id: "short-sentence-layout-skill",
     category: "skill",
     featured: false,
-    cover: "/covers/short-sentence-layout-skill.png",
+    cover: "/covers/short-sentence-layout-skill-1200.webp",
     href: "https://github.com/kanshao2077/short-sentence-layout-skill",
     zh: {
       title: "短句排版 Skill",
@@ -831,7 +831,7 @@ export const works = [
     id: "kanshao-writing-skill",
     category: "skill",
     featured: false,
-    cover: "/covers/kanshao-writing-skill.png",
+    cover: "/covers/kanshao-writing-skill-1200.webp",
     href: "https://github.com/kanshao2077/kanshao-writing-skill",
     zh: {
       title: "侃少写作 Skill",
@@ -857,7 +857,7 @@ export const works = [
     id: "jibu-li-ke-shi",
     category: "skill",
     featured: false,
-    cover: "/covers/jibu-li-ke-shi.png",
+    cover: "/covers/jibu-li-ke-shi-1200.webp",
     href: "https://github.com/kanshao2077/jibu-li-ke-shi",
     zh: {
       title: "吉卜力风格可视化 Skill",
@@ -883,7 +883,7 @@ export const works = [
     id: "huituan-codex-pet",
     category: "skill",
     featured: false,
-    cover: "/covers/codex-desktop-pet-skill.png",
+    cover: "/covers/codex-desktop-pet-skill-1200.webp",
     href: "https://github.com/kanshao2077/huituan-codex-pet",
     zh: {
       title: "Codex 桌宠 Skill",
@@ -1061,28 +1061,28 @@ export const gallery: Array<{
   title: Record<Lang, string>;
 }> = [
   {
-    image: "/gallery/2026-read.jpg",
+    image: "/gallery/2026-read.webp",
     title: {
       zh: "2026 好好看书",
       en: "2026, Read Properly"
     }
   },
   {
-    image: "/gallery/life-long-run.jpg",
+    image: "/gallery/life-long-run.webp",
     title: {
       zh: "人生是一场长跑",
       en: "Life Is a Long Run"
     }
   },
   {
-    image: "/gallery/black-myth-journey.jpg",
+    image: "/gallery/black-myth-journey.webp",
     title: {
       zh: "玩玩黑神话，踏上取经路",
       en: "Playing Black Myth, Starting the Journey"
     }
   },
   {
-    image: "/gallery/ai-certificate.jpg",
+    image: "/gallery/ai-certificate.webp",
     title: {
       zh: "小小人工智能证书，拿下",
       en: "Tiny AI Certificate, Secured"
