@@ -8,9 +8,16 @@ interface Props {
 
 const { lang, featuredOnly = false } = Astro.props;
 const sourceItems = featuredOnly ? works.filter((work) => work.featured) : works;
-const items = [...sourceItems].sort(
-  (left, right) => Number(Boolean(right.cover)) - Number(Boolean(left.cover))
-);
+const pinnedOrder = new Map([
+  ["feishu-personal-manual", 0],
+  ["ai-writing-after-old-experience", 1]
+]);
+const items = [...sourceItems].sort((left, right) => {
+  const priority = (pinnedOrder.get(left.id) ?? Number.MAX_SAFE_INTEGER)
+    - (pinnedOrder.get(right.id) ?? Number.MAX_SAFE_INTEGER);
+
+  return priority || Number(Boolean(right.cover)) - Number(Boolean(left.cover));
+});
 const labels = categoryLabels[lang];
 ---
 

@@ -361,7 +361,7 @@ export const works = [
     id: "shupian",
     category: "vibe",
     featured: false,
-    cover: "",
+    cover: "/covers/shupian.png",
     href: "https://github.com/kanshao2077/shupian",
     zh: {
       title: "薯片",
@@ -387,7 +387,7 @@ export const works = [
     id: "echo-card",
     category: "vibe",
     featured: false,
-    cover: "",
+    cover: "/covers/echo-card.png",
     href: "https://github.com/kanshao2077/echo-card",
     zh: {
       title: "回声卡",
@@ -413,7 +413,7 @@ export const works = [
     id: "jike-timeline-epub",
     category: "vibe",
     featured: false,
-    cover: "",
+    cover: "/covers/jike-timeline-epub.png",
     href: "https://github.com/kanshao2077/jike-timeline-epub",
     zh: {
       title: "即刻小书摊",
@@ -439,7 +439,7 @@ export const works = [
     id: "weibo-timeline-epub",
     category: "vibe",
     featured: false,
-    cover: "",
+    cover: "/covers/weibo-timeline-epub.png",
     href: "https://github.com/kanshao2077/weibo-timeline-epub",
     zh: {
       title: "微博小书摊",
@@ -458,32 +458,6 @@ export const works = [
       proof:
         "This work proves that I can design practical personal archiving tools within privacy and platform constraints.",
       tools: ["Chrome Extension", "JavaScript", "EPUB", "Privacy"],
-      cta: "View Repository"
-    }
-  },
-  {
-    id: "da-wenti",
-    category: "vibe",
-    featured: false,
-    cover: "",
-    href: "https://github.com/kanshao2077/da-wenti",
-    zh: {
-      title: "大问题",
-      deck: "记录每天的问题、答案、追问和总结，让短暂的好奇心变成可以长期回看的思考档案。",
-      role: "产品概念、信息结构、AI 功能与数据存储",
-      result: "完成支持统计、收藏、追问和分享卡片的好奇心日记原型",
-      proof: "这个作品证明：我能把抽象的自我探索需求设计成有连续性的数字工具。",
-      tools: ["Next.js", "Supabase", "AI Workflow", "Product Prototype"],
-      cta: "查看仓库"
-    },
-    en: {
-      title: "Da Wenti",
-      deck: "Records daily questions, answers, follow-ups, and reflections so passing curiosity becomes a lasting thinking archive.",
-      role: "Product concept, information structure, AI features, data storage",
-      result: "Built a curiosity-journal prototype with statistics, favorites, follow-ups, and share cards",
-      proof:
-        "This work proves that I can turn an abstract self-exploration need into a continuous digital tool.",
-      tools: ["Next.js", "Supabase", "AI Workflow", "Product Prototype"],
       cta: "View Repository"
     }
   },
@@ -701,7 +675,7 @@ export const works = [
     id: "shot-doctor",
     category: "skill",
     featured: false,
-    cover: "",
+    cover: "/covers/shot-doctor.png",
     href: "https://github.com/kanshao2077/shot-doctor",
     zh: {
       title: "镜头医生",
@@ -779,7 +753,7 @@ export const works = [
     id: "deep-research-skill",
     category: "skill",
     featured: false,
-    cover: "",
+    cover: "/covers/deep-research-skill.png",
     href: "https://github.com/kanshao2077/deep-research-skill",
     zh: {
       title: "深度调研 Skill",
@@ -802,36 +776,10 @@ export const works = [
     }
   },
   {
-    id: "deploy-skill",
-    category: "skill",
-    featured: false,
-    cover: "",
-    href: "https://github.com/kanshao2077/deploy-skill",
-    zh: {
-      title: "Deploy Skill",
-      deck: "把 Coze / 秒哒导出的 Vite / React 静态前端整理并自动发布到 GitHub Pages。",
-      role: "部署流程、GitHub Actions、风险检查",
-      result: "形成从源码包到在线 Pages 站点的可复用部署 Skill",
-      proof: "这个作品证明：我能把前端发布中的清理、构建、配置和验证做成标准流程。",
-      tools: ["GitHub Pages", "GitHub Actions", "Vite", "Automation"],
-      cta: "查看 Skill"
-    },
-    en: {
-      title: "Deploy Skill",
-      deck: "Prepares Coze or Miaoda Vite/React exports and publishes them automatically to GitHub Pages.",
-      role: "Deployment workflow, GitHub Actions, risk checks",
-      result: "Built a reusable workflow from source package to a live Pages site",
-      proof:
-        "This work proves that I can standardize cleanup, building, configuration, and verification in frontend publishing.",
-      tools: ["GitHub Pages", "GitHub Actions", "Vite", "Automation"],
-      cta: "View Skill"
-    }
-  },
-  {
     id: "cover-skill",
     category: "skill",
     featured: false,
-    cover: "",
+    cover: "/covers/cover-skill.png",
     href: "https://github.com/kanshao2077/CoverSkill",
     zh: {
       title: "CoverSkill",
@@ -857,7 +805,7 @@ export const works = [
     id: "short-sentence-layout-skill",
     category: "skill",
     featured: false,
-    cover: "",
+    cover: "/covers/short-sentence-layout-skill.png",
     href: "https://github.com/kanshao2077/short-sentence-layout-skill",
     zh: {
       title: "短句排版 Skill",
@@ -883,7 +831,7 @@ export const works = [
     id: "kanshao-writing-skill",
     category: "skill",
     featured: false,
-    cover: "",
+    cover: "/covers/kanshao-writing-skill.png",
     href: "https://github.com/kanshao2077/kanshao-writing-skill",
     zh: {
       title: "侃少写作 Skill",
@@ -909,7 +857,7 @@ export const works = [
     id: "jibu-li-ke-shi",
     category: "skill",
     featured: false,
-    cover: "",
+    cover: "/covers/jibu-li-ke-shi.png",
     href: "https://github.com/kanshao2077/jibu-li-ke-shi",
     zh: {
       title: "吉卜力风格可视化 Skill",
