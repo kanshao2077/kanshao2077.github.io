@@ -12,6 +12,8 @@ const pinnedOrder = new Map([
   ["feishu-personal-manual", 0],
   ["ai-writing-after-old-experience", 1]
 ]);
+const optimizedCover = (cover: string, width: 640 | 1200) =>
+  cover.replace(/\.[^/.]+$/, `-${width}.webp`);
 const items = [...sourceItems].sort((left, right) => {
   const priority = (pinnedOrder.get(left.id) ?? Number.MAX_SAFE_INTEGER)
     - (pinnedOrder.get(right.id) ?? Number.MAX_SAFE_INTEGER);
@@ -32,13 +34,24 @@ const labels = categoryLabels[lang];
 )}
 
 <div class:list={["work-grid", featuredOnly && "is-featured"]} data-work-grid>
-  {items.map((work) => {
+  {items.map((work, index) => {
     const item = work[lang];
+    const cover640 = work.cover ? optimizedCover(work.cover, 640) : "";
+    const cover1200 = work.cover ? optimizedCover(work.cover, 1200) : "";
     return (
       <article class="work-card" data-category={work.category}>
         <a class="work-cover" href={work.href || "#"} aria-label={item.title}>
           {work.cover ? (
-            <img src={work.cover} alt="" loading="lazy" decoding="async" />
+            <img
+              src={cover1200}
+              srcset={`${cover640} 1x, ${cover1200} 2x`}
+              width="1200"
+              height="675"
+              alt=""
+              loading={!featuredOnly && index < 3 ? "eager" : "lazy"}
+              decoding="async"
+              fetchpriority={!featuredOnly && index === 0 ? "high" : "auto"}
+            />
           ) : (
             <div class="work-abstract" aria-hidden="true">
               <i></i>

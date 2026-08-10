@@ -813,6 +813,7 @@ p {
 .gallery-placeholder img {
   display: block;
   width: 100%;
+  height: auto;
   aspect-ratio: 16 / 9;
   border: 1px solid var(--light-gray);
   border-radius: var(--radius-panel);
@@ -875,7 +876,9 @@ p {
 
 .gallery-image-button img,
 .pending-visual {
+  display: block;
   width: 100%;
+  height: auto;
   aspect-ratio: 3 / 4;
   object-fit: cover;
 }
@@ -922,6 +925,7 @@ p {
 
 .gallery-dialog img {
   width: 100%;
+  height: auto;
   max-height: 78vh;
   border-radius: var(--radius-card);
   object-fit: contain;
