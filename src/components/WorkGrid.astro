@@ -13,7 +13,7 @@ const pinnedOrder = new Map([
   ["ai-writing-after-old-experience", 1]
 ]);
 const optimizedCover = (cover: string, width: 640 | 1200) =>
-  cover.replace(/\.[^/.]+$/, `-${width}.webp`);
+  cover.replace(/-(?:640|1200)\.webp$/, `-${width}.webp`);
 const items = [...sourceItems].sort((left, right) => {
   const priority = (pinnedOrder.get(left.id) ?? Number.MAX_SAFE_INTEGER)
     - (pinnedOrder.get(right.id) ?? Number.MAX_SAFE_INTEGER);

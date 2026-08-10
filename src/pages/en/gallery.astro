@@ -4,7 +4,6 @@ import { copy, gallery } from "../../data/site";
 
 const lang = "en";
 const t = copy[lang].galleryPage;
-const optimizedImage = (image: string) => image.replace(/\.[^/.]+$/, ".webp");
 ---
 
 <BaseLayout lang={lang} path="/gallery" title={t.title}>
@@ -18,14 +17,14 @@ const optimizedImage = (image: string) => image.replace(/\.[^/.]+$/, ".webp");
     {gallery.map((item, index) => (
       <article class="gallery-card">
         <button class="gallery-image-button" type="button" data-gallery-open={`gallery-${index}`} aria-label={`Open image: ${item.title[lang]}`}>
-          <img src={optimizedImage(item.image)} width="900" height="1200" alt={item.title[lang]} loading={index > 1 ? "lazy" : "eager"} decoding="async" fetchpriority={index === 0 ? "high" : "auto"} />
+          <img src={item.image} width="900" height="1200" alt={item.title[lang]} loading={index > 1 ? "lazy" : "eager"} decoding="async" fetchpriority={index === 0 ? "high" : "auto"} />
         </button>
         <div>
           <h2>{item.title[lang]}</h2>
         </div>
         <dialog class="gallery-dialog" id={`gallery-${index}`}>
           <button class="gallery-dialog-close" type="button" data-gallery-close aria-label="Close">×</button>
-          <img src={optimizedImage(item.image)} width="900" height="1200" alt={item.title[lang]} />
+          <img src={item.image} width="900" height="1200" alt={item.title[lang]} />
           <p>{item.title[lang]}</p>
         </dialog>
       </article>
