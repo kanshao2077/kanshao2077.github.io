@@ -861,21 +861,12 @@ p {
   background: var(--snow);
 }
 
-.strengths-section.section-pad {
-  position: relative;
-  z-index: 0;
-  padding-top: 48px;
-  padding-bottom: 48px;
-}
-
-.strengths-section::before {
-  position: absolute;
-  inset: 0 calc(50% - 50vw);
-  z-index: -1;
-  border-top: 1px solid rgba(229, 229, 229, 0.9);
-  border-bottom: 1px solid rgba(229, 229, 229, 0.9);
+.strengths-card {
+  padding: 24px;
+  overflow: hidden;
+  border: 1px solid var(--light-gray);
+  border-radius: var(--radius-panel);
   background: rgba(255, 255, 255, 0.94);
-  content: "";
 }
 
 .strengths-grid {
@@ -1437,11 +1428,6 @@ p {
 
   .top-tight {
     padding-top: 8px;
-  }
-
-  .strengths-section.section-pad {
-    padding-top: 34px;
-    padding-bottom: 34px;
   }
 
   .filter-bar {
