@@ -82,6 +82,7 @@ const labels = categoryLabels[lang];
   <script>
     const filterRoot = document.querySelector("[data-work-filters]");
     const cards = Array.from(document.querySelectorAll("[data-work-grid] .work-card"));
+    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
     filterRoot?.addEventListener("click", (event) => {
       const target = event.target;
@@ -95,9 +96,21 @@ const labels = categoryLabels[lang];
       button.classList.add("is-active");
 
       cards.forEach((card) => {
+        if (!(card instanceof HTMLElement)) return;
+
         const visible = filter === "all" || card.dataset.category === filter;
         card.hidden = !visible;
         card.style.display = visible ? "" : "none";
+
+        if (visible && !reduceMotion) {
+          card.animate(
+            [
+              { opacity: 0, transform: "translateY(12px) scale(0.985)" },
+              { opacity: 1, transform: "translateY(0) scale(1)" },
+            ],
+            { duration: 360, easing: "cubic-bezier(0.16, 1, 0.3, 1)" }
+          );
+        }
       });
     });
   </script>

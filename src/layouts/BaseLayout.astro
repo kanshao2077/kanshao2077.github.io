@@ -1,5 +1,6 @@
 ---
 import MusicWidget from "../components/MusicWidget.astro";
+import MotionLayer from "../components/MotionLayer.astro";
 import { copy, languages, nav, switchPath, type Lang } from "../data/site";
 import "../styles/global.css";
 
@@ -37,6 +38,7 @@ const currentNav = nav[lang];
   </head>
   <body data-lang={lang} data-theme={theme}>
     <div class="site-shell">
+      <MotionLayer />
       <header class="site-header" data-site-header>
         <a class="brand-mark" href={lang === "zh" ? "/" : "/en"} aria-label="Home">
           <img class="brand-avatar" src="/avatar/kanshao-avatar.webp" width="160" height="160" alt={lang === "zh" ? "侃少 2077 头像" : "Kanshao 2077 avatar"} />

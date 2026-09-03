@@ -1,0 +1,74 @@
+<span class="motion-sentinel" data-motion-sentinel aria-hidden="true"></span>
+
+<script>
+  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const revealSelector = [
+    ".page-hero",
+    ".proof-band",
+    ".section-heading",
+    ".split-section > :first-child",
+    ".currently-band",
+    ".gallery-entry > :first-child",
+    ".gallery-placeholder",
+    ".filter-bar",
+    ".work-card",
+    ".timeline-item",
+    ".timeline-more-summary",
+    ".capability-grid article",
+    "#capability > .tag-cloud",
+    ".about-card",
+    ".strengths-card",
+    ".gallery-card",
+    ".contact-card",
+    ".site-footer",
+  ].join(",");
+
+  const revealNodes = Array.from(document.querySelectorAll(revealSelector)).filter(
+    (node): node is HTMLElement => node instanceof HTMLElement
+  );
+
+  if (!reduceMotion) {
+    document.documentElement.classList.add("motion-enabled");
+
+    const groupCounts = new Map<Element, number>();
+    revealNodes.forEach((node) => {
+      node.classList.add("motion-reveal");
+
+      const parent = node.parentElement;
+      if (!parent) return;
+
+      const order = groupCounts.get(parent) ?? 0;
+      node.style.setProperty("--reveal-order", String(Math.min(order, 4)));
+      groupCounts.set(parent, order + 1);
+    });
+
+    if ("IntersectionObserver" in window) {
+      const revealObserver = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (!entry.isIntersecting) return;
+
+            entry.target.classList.add("is-revealed");
+            revealObserver.unobserve(entry.target);
+          });
+        },
+        { rootMargin: "0px 0px -8% 0px", threshold: 0.08 }
+      );
+
+      revealNodes.forEach((node) => revealObserver.observe(node));
+    } else {
+      revealNodes.forEach((node) => node.classList.add("is-revealed"));
+    }
+  }
+
+  const header = document.querySelector("[data-site-header]");
+  const sentinel = document.querySelector("[data-motion-sentinel]");
+
+  if (header && sentinel && "IntersectionObserver" in window) {
+    const headerObserver = new IntersectionObserver(([entry]) => {
+      header.classList.toggle("is-scrolled", !entry.isIntersecting);
+    });
+
+    headerObserver.observe(sentinel);
+  }
+</script>
