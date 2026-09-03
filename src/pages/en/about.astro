@@ -29,19 +29,21 @@ const t = copy[lang].aboutPage;
   </section>
 
   <section class="strengths-section section-pad top-tight">
-    <div class="section-heading">
-      <div>
-        <p class="eyebrow">Strengths</p>
-        <h2>{t.strengthsTitle}</h2>
+    <div class="strengths-card">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Strengths</p>
+          <h2>{t.strengthsTitle}</h2>
+        </div>
       </div>
-    </div>
-    <div class="strengths-grid">
-      {strengths[lang].map((strength) => (
-        <article class="strength-item">
-          <h3>{strength.title}</h3>
-          <p>{strength.body}</p>
-        </article>
-      ))}
+      <div class="strengths-grid">
+        {strengths[lang].map((strength) => (
+          <article class="strength-item">
+            <h3>{strength.title}</h3>
+            <p>{strength.body}</p>
+          </article>
+        ))}
+      </div>
     </div>
   </section>
 
