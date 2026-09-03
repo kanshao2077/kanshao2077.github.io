@@ -107,6 +107,7 @@ export const copy = {
       bio:
         "我做过 AI 媒体内容运营、AI 工具分享、AIGC 视觉内容创作，也独立搭过 AI 职场提效方向的知识付费项目。我的优势不是“什么都会”，而是能用内容理解产品、用 AIGC 表达想法、用工具把想法快速落地。",
       skillsTitle: "能力关键词",
+      strengthsTitle: "我的优势",
       timelineTitle: "工作经历",
       noteTitle: "沟通方式",
       note:
@@ -187,6 +188,7 @@ export const copy = {
       bio:
         "I have worked on AI media content operations, AI tool education, AIGC visual creation, and an AI workplace productivity paid-learning project. My value is not that I do everything. It is that I understand products through content, express ideas through AIGC, and use tools to ship quickly.",
       skillsTitle: "Capability Keywords",
+      strengthsTitle: "Strengths",
       timelineTitle: "Experience",
       noteTitle: "How I Work",
       note:
@@ -223,6 +225,73 @@ export const skills = {
     "Vibe Coding",
     "Information Retrieval",
     "Copywriting"
+  ]
+};
+
+export const strengths = {
+  zh: [
+    {
+      title: "AIGC 创作与 AI 工作流",
+      body:
+        "长期深度使用生成式 AI，持续跟进 LLM、图像、视频等模型能力演进，熟悉即梦、LibTV、Midjourney、ChatGPT 等主流工具及多类 AI 创作平台。具备从创意构思、Prompt、视觉设定、分镜，到生成、筛片、剪辑与成片的完整 AIGC 项目经验，并沉淀多套图文、视频生产 SOP 与 AI 辅助内容工作流。"
+    },
+    {
+      title: "Vibe Coding 与 AI 应用实践",
+      body:
+        "长期进行 Vibe Coding 实践，不停留在 Demo 和教程层面，而是将 AI 编程实际用于内容生产、项目开发和个人提效。能够围绕真实需求快速完成需求拆解、原型设计、功能实现、调试与迭代，并持续开发个人工具、AI Skill、小型产品与自动化工作流，将重复性内容工作进一步产品化、工具化。"
+    },
+    {
+      title: "AI 内容运营与账号孵化",
+      body:
+        "具备从 0 到 1 账号定位、选题策划、内容生产、分发运营到数据复盘的完整经验，拥有多个实际账号与内容项目案例。熟悉小红书、B 站、抖音、视频号等平台内容逻辑，能够结合用户情绪、平台趋势与数据反馈持续迭代内容策略。"
+    },
+    {
+      title: "视频创意与全链路制作",
+      body:
+        "新闻传播学院编导专业背景，能够独立完成创意策划、脚本、分镜、拍摄、AI 素材生成、剪辑、声音及后期包装。相比单纯完成制作，更关注镜头语言、视觉风格、叙事节奏与最终表达，能够将 AI 能力真正融入视频生产，而不是停留在单点素材生成。"
+    },
+    {
+      title: "AI 趋势研究与内容传播",
+      body:
+        "新闻传播科班背景，长期关注生成式 AI、AI Agent、Vibe Coding、AI 产品及科技产业趋势，习惯第一时间上手新模型、新产品与新交互范式。具备较强的信息检索、深度调研、采访采编与结构化表达能力，擅长从复杂信息中快速提炼核心观点，并将技术能力、产品变化和产业趋势转译为用户易理解、可传播的多平台内容。"
+    },
+    {
+      title: "数据复盘与团队协作",
+      body:
+        "具备数据意识，能够结合播放、完播、互动、转化及用户反馈诊断内容表现，并进一步拆解选题、标题、视觉、叙事和分发环节的问题。拥有内容项目、技术传播、活动运营及品牌项目经验，能够完成从需求理解、创意策划、资源协调、内容落地到复盘沉淀的完整链路。习惯主动研究新工具与新方法，并将个人探索进一步沉淀为团队 SOP、知识库或可复用工具。"
+    }
+  ],
+  en: [
+    {
+      title: "AIGC Creation and AI Workflows",
+      body:
+        "I work extensively with generative AI and continuously track advances across language, image, and video models. I use platforms including Jimeng, LibTV, Midjourney, and ChatGPT, and have delivered complete AIGC projects from concept, prompting, visual direction, and storyboarding through generation, selection, editing, and final production. I have also documented reusable SOPs for image, text, video, and AI-assisted content workflows."
+    },
+    {
+      title: "Vibe Coding and Applied AI",
+      body:
+        "My Vibe Coding practice goes beyond demos and tutorials: I use AI-assisted development in content production, project delivery, and personal productivity. I can quickly move from a real need to requirement breakdown, prototype, implementation, debugging, and iteration, while building personal tools, AI Skills, small products, and automated workflows that turn repetitive content work into reusable systems."
+    },
+    {
+      title: "AI Content Operations and Account Incubation",
+      body:
+        "I have end-to-end experience taking content accounts from zero to one, covering positioning, topic planning, production, distribution, operations, and performance review across multiple real projects. I understand the content mechanics of Xiaohongshu, Bilibili, Douyin, and WeChat Channels, and refine strategy through audience sentiment, platform trends, and performance data."
+    },
+    {
+      title: "Video Creative and End-to-End Production",
+      body:
+        "With an academic background in directing and production, I can independently handle creative planning, scripts, storyboards, shooting, AI asset generation, editing, sound, and post-production. I focus not only on completing a video, but also on camera language, visual style, narrative rhythm, and the final expression, integrating AI into the full production process rather than using it for isolated assets."
+    },
+    {
+      title: "AI Trend Research and Communication",
+      body:
+        "With formal training in journalism and communication, I closely follow generative AI, AI agents, Vibe Coding, AI products, and technology-industry shifts, and test new models, products, and interaction patterns early. I combine information retrieval, deep research, interviewing, editing, and structured writing to extract the signal from complex material and translate technical capabilities, product changes, and industry trends into accessible multi-platform content."
+    },
+    {
+      title: "Performance Review and Team Collaboration",
+      body:
+        "I use views, completion rate, engagement, conversion, and audience feedback to diagnose content performance and locate problems across topic selection, titles, visuals, narrative, and distribution. My experience spans content, technical communication, events, and brand projects, covering the full path from requirements and creative planning to coordination, delivery, and review. I also turn individual exploration into team SOPs, knowledge bases, and reusable tools."
+    }
   ]
 };
 

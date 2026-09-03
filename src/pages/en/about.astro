@@ -1,7 +1,7 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import Timeline from "../../components/Timeline.astro";
-import { copy, skills } from "../../data/site";
+import { copy, skills, strengths } from "../../data/site";
 
 const lang = "en";
 const t = copy[lang].aboutPage;
@@ -25,6 +25,23 @@ const t = copy[lang].aboutPage;
     <div class="about-card tone-card">
       <h2>{t.noteTitle}</h2>
       <p>{t.note}</p>
+    </div>
+  </section>
+
+  <section class="strengths-section section-pad top-tight">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">Strengths</p>
+        <h2>{t.strengthsTitle}</h2>
+      </div>
+    </div>
+    <div class="strengths-grid">
+      {strengths[lang].map((strength) => (
+        <article class="strength-item">
+          <h3>{strength.title}</h3>
+          <p>{strength.body}</p>
+        </article>
+      ))}
     </div>
   </section>
 
