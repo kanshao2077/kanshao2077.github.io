@@ -351,7 +351,7 @@ export const works = [
   {
     id: "pixel-prompt",
     category: "vibe",
-    featured: true,
+    featured: false,
     cover: "/covers/pixel-prompt-cover-1200.webp",
     href: "https://kanshao2077.github.io/pixel-prompt/",
     zh: {
@@ -691,7 +691,7 @@ export const works = [
   {
     id: "feishu-personal-manual",
     category: "articles",
-    featured: false,
+    featured: true,
     cover: "/covers/feishu-personal-handbook-1200.webp",
     href: "https://my.feishu.cn/wiki/EnK5wYzdsiRJlJkD2Smcml7zn8f",
     zh: {
