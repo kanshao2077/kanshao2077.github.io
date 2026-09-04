@@ -523,6 +523,25 @@ p {
   transition: transform 560ms var(--ease-out);
 }
 
+.motion-enabled .work-card .work-cover::after {
+  position: absolute;
+  inset: 6px;
+  z-index: 3;
+  border-radius: var(--radius-card);
+  background: var(--snow);
+  box-shadow: inset 0 0 0 1px var(--light-gray);
+  content: "";
+  pointer-events: none;
+  transform: scaleY(1);
+  transform-origin: top center;
+  transition: transform 720ms var(--ease-out);
+  transition-delay: calc(var(--reveal-order, 0) * 65ms + 90ms);
+}
+
+.motion-enabled .work-card.is-revealed .work-cover::after {
+  transform: scaleY(0);
+}
+
 .work-abstract {
   position: relative;
   display: grid;
@@ -639,6 +658,7 @@ p {
 }
 
 .filter-bar {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   width: fit-content;
@@ -650,7 +670,37 @@ p {
   background: var(--white);
 }
 
+.filter-indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: var(--filter-width, 0);
+  height: var(--filter-height, 0);
+  border: 1px solid var(--light-gray);
+  border-radius: var(--radius-pill);
+  background: var(--light-gray);
+  opacity: 0;
+  pointer-events: none;
+  transform: translate3d(var(--filter-x, 0), var(--filter-y, 0), 0);
+  transition:
+    width 360ms var(--ease-out),
+    height 360ms var(--ease-out),
+    opacity 160ms ease,
+    transform 360ms var(--ease-out);
+}
+
+.filter-indicator.is-ready {
+  opacity: 1;
+}
+
+.filter-indicator.is-static {
+  transition: none;
+}
+
 .filter-bar button {
+  position: relative;
+  z-index: 1;
   min-height: 40px;
   padding: 0 14px;
   border: 1px solid transparent;
@@ -659,14 +709,18 @@ p {
   color: var(--stone);
   cursor: pointer;
   font-weight: 400;
-  transition: background 120ms ease, color 120ms ease, border-color 120ms ease;
+  transition: background 180ms ease, color 180ms ease, border-color 180ms ease;
 }
 
-.filter-bar button:hover,
-.filter-bar button.is-active {
-  border-color: var(--black);
+.filter-bar button:hover:not(.is-active) {
   border-color: var(--light-gray);
-  background: var(--light-gray);
+  background: rgba(229, 229, 229, 0.56);
+  color: var(--near-black);
+}
+
+.filter-bar button.is-active {
+  border-color: transparent;
+  background: transparent;
   color: var(--near-black);
 }
 
@@ -934,7 +988,7 @@ p {
   border: 1px solid var(--light-gray);
   border-radius: var(--radius-panel);
   background: var(--white);
-  transition: border-color 220ms ease, box-shadow 280ms ease, transform 320ms var(--ease-out);
+  transition: border-color 220ms ease, box-shadow 280ms ease, opacity 260ms ease, transform 320ms var(--ease-out);
 }
 
 .gallery-image-button img,
@@ -1415,6 +1469,11 @@ p {
   .work-card:hover .work-cover img,
   .gallery-card:hover .gallery-image-button img {
     transform: scale(1.025);
+  }
+
+  .gallery-grid:has(.gallery-card:hover) .gallery-card:not(:hover) {
+    opacity: 0.72;
+    transform: scale(0.992);
   }
 
   .timeline-more-summary:hover {

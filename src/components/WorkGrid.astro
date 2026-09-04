@@ -25,6 +25,7 @@ const labels = categoryLabels[lang];
 
 {!featuredOnly && (
   <div class="filter-bar" data-work-filters>
+    <span class="filter-indicator" data-filter-indicator aria-hidden="true"></span>
     <button class="is-active" type="button" data-filter="all">{labels.all}</button>
     <button type="button" data-filter="aigc">{labels.aigc}</button>
     <button type="button" data-filter="articles">{labels.articles}</button>
@@ -82,7 +83,32 @@ const labels = categoryLabels[lang];
   <script>
     const filterRoot = document.querySelector("[data-work-filters]");
     const cards = Array.from(document.querySelectorAll("[data-work-grid] .work-card"));
+    const indicator = filterRoot?.querySelector("[data-filter-indicator]");
     const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    const syncIndicator = (button, immediate = false) => {
+      if (!(button instanceof HTMLElement) || !(indicator instanceof HTMLElement)) return;
+
+      indicator.classList.toggle("is-static", immediate);
+      indicator.style.setProperty("--filter-x", `${button.offsetLeft}px`);
+      indicator.style.setProperty("--filter-y", `${button.offsetTop}px`);
+      indicator.style.setProperty("--filter-width", `${button.offsetWidth}px`);
+      indicator.style.setProperty("--filter-height", `${button.offsetHeight}px`);
+      indicator.classList.add("is-ready");
+
+      if (immediate) {
+        requestAnimationFrame(() => indicator.classList.remove("is-static"));
+      }
+    };
+
+    requestAnimationFrame(() => syncIndicator(filterRoot?.querySelector("button.is-active"), true));
+
+    if (filterRoot && "ResizeObserver" in window) {
+      const filterResizeObserver = new ResizeObserver(() => {
+        syncIndicator(filterRoot.querySelector("button.is-active"), true);
+      });
+      filterResizeObserver.observe(filterRoot);
+    }
 
     filterRoot?.addEventListener("click", (event) => {
       const target = event.target;
@@ -94,6 +120,7 @@ const labels = categoryLabels[lang];
       const filter = button.dataset.filter;
       filterRoot.querySelectorAll("button").forEach((item) => item.classList.remove("is-active"));
       button.classList.add("is-active");
+      syncIndicator(button);
 
       cards.forEach((card) => {
         if (!(card instanceof HTMLElement)) return;
