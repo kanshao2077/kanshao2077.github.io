@@ -560,7 +560,7 @@ export const works = [
     id: "afterglow-index",
     category: "vibe",
     featured: false,
-    cover: "",
+    cover: "/covers/余光档案-1200.webp",
     href: "https://www.kanshao2077.cn/afterglow-index/",
     zh: {
       title: "余光档案",
@@ -586,7 +586,7 @@ export const works = [
     id: "skill-atlas",
     category: "vibe",
     featured: false,
-    cover: "",
+    cover: "/covers/我的Skill图鉴-1200.webp",
     href: "https://www.kanshao2077.cn/skill-atlas/",
     zh: {
       title: "我的 Skill 图鉴",
@@ -612,7 +612,7 @@ export const works = [
     id: "solo-studio",
     category: "vibe",
     featured: false,
-    cover: "",
+    cover: "/covers/SoloStudio-1200.webp",
     href: "https://www.kanshao2077.cn/solo-studio/",
     zh: {
       title: "Solo Studio",
@@ -1082,7 +1082,7 @@ export const works = [
     id: "high-impact-cover",
     category: "skill",
     featured: false,
-    cover: "",
+    cover: "/covers/高冲击封面skill-1200.webp",
     href: "https://github.com/kanshao2077/high-impact-cover",
     zh: {
       title: "高冲击封面 Skill",
@@ -1108,7 +1108,7 @@ export const works = [
     id: "skill-product-manager",
     category: "skill",
     featured: false,
-    cover: "",
+    cover: "/covers/Skill产品经理-1200.webp",
     href: "https://github.com/kanshao2077/skill-product-manager",
     zh: {
       title: "Skill 产品经理",
@@ -1134,7 +1134,7 @@ export const works = [
     id: "cinezine",
     category: "skill",
     featured: false,
-    cover: "",
+    cover: "/covers/CineZine-1200.webp",
     href: "https://github.com/kanshao2077/CineZine",
     zh: {
       title: "CineZine",
@@ -1160,7 +1160,7 @@ export const works = [
     id: "ukiyo-e-skill",
     category: "skill",
     featured: false,
-    cover: "",
+    cover: "/covers/浮世绘skill-1200.webp",
     href: "https://github.com/kanshao2077/ukiyo-e-skill",
     zh: {
       title: "浮世绘 Skill",
@@ -1186,7 +1186,7 @@ export const works = [
     id: "draw-cloud-faces",
     category: "skill",
     featured: false,
-    cover: "",
+    cover: "/covers/云朵有表情skill-1200.webp",
     href: "https://github.com/kanshao2077/draw-cloud-faces",
     zh: {
       title: "云朵有表情 Skill",
@@ -1212,7 +1212,7 @@ export const works = [
     id: "childlike-skill",
     category: "skill",
     featured: false,
-    cover: "",
+    cover: "/covers/孩子气skill-1200.webp",
     href: "https://github.com/kanshao2077/childlike-skill",
     zh: {
       title: "孩子气 Skill",
