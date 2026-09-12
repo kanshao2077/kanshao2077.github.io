@@ -531,6 +531,110 @@ export const works = [
     }
   },
   {
+    id: "crime-podcast-radar",
+    category: "vibe",
+    featured: false,
+    cover: "",
+    href: "https://www.kanshao2077.cn/crime-podcast-radar/",
+    zh: {
+      title: "罪案雷达",
+      deck: "中文罪案播客播放榜、推荐榜与历史选听工具，按公开数据与评论口碑分层呈现。",
+      role: "产品定义、数据采集方法、评分规则与静态站点",
+      result: "完成可按期更新、保留历史并公开评分说明的播客榜单",
+      proof: "这个作品证明：我能把兴趣选题做成有方法、有证据边界、可持续更新的内容产品。",
+      tools: ["HTML", "Python", "Data Curation", "GitHub Pages"],
+      cta: "打开项目"
+    },
+    en: {
+      title: "Crime Podcast Radar",
+      deck: "A Chinese true-crime podcast chart and listening guide that separates verified play data, review signals, and historical editions.",
+      role: "Product definition, collection methodology, ranking rules, static site",
+      result: "Built an updateable podcast chart with preserved history and transparent scoring notes",
+      proof:
+        "This work proves that I can turn a personal interest into a sustainable content product with explicit methods and evidence boundaries.",
+      tools: ["HTML", "Python", "Data Curation", "GitHub Pages"],
+      cta: "Open Project"
+    }
+  },
+  {
+    id: "afterglow-index",
+    category: "vibe",
+    featured: false,
+    cover: "",
+    href: "https://www.kanshao2077.cn/afterglow-index/",
+    zh: {
+      title: "余光档案",
+      deck: "面向 AIGC 影像的作品索引，自动完成发现、去重与封面采集，再由编辑筛出精选。",
+      role: "索引产品设计、来源体系、数据同步与前端实现",
+      result: "完成支持搜索、筛选、作品详情和人工精选的 AIGC 视觉档案 MVP",
+      proof: "这个作品证明：我能把分散的行业作品整理成可追溯、可持续维护的策展型产品。",
+      tools: ["JavaScript", "Vite", "Data Pipeline", "AIGC Curation"],
+      cta: "打开项目"
+    },
+    en: {
+      title: "Afterglow Index",
+      deck: "An AIGC moving-image index where machines discover, deduplicate, and collect covers before an editor selects standout work.",
+      role: "Index product design, source system, data synchronization, frontend implementation",
+      result: "Built an AIGC visual archive MVP with search, filters, work details, and editorial picks",
+      proof:
+        "This work proves that I can organize scattered industry work into a traceable and maintainable curatorial product.",
+      tools: ["JavaScript", "Vite", "Data Pipeline", "AIGC Curation"],
+      cta: "Open Project"
+    }
+  },
+  {
+    id: "skill-atlas",
+    category: "vibe",
+    featured: false,
+    cover: "",
+    href: "https://www.kanshao2077.cn/skill-atlas/",
+    zh: {
+      title: "我的 Skill 图鉴",
+      deck: "扫描本机和插件中的 Skill，把中文名、用途、调用方式、来源与安装位置整理成可检索图鉴。",
+      role: "信息架构、本机扫描、安全边界与前端实现",
+      result: "完成本机可管理、线上可只读浏览的双形态 Skill 导航站",
+      proof: "这个作品证明：我能把不断增长的 AI 能力资产整理成清晰、安全、可维护的管理工具。",
+      tools: ["JavaScript", "Node.js", "Local-first", "GitHub Pages"],
+      cta: "打开项目"
+    },
+    en: {
+      title: "My Skill Atlas",
+      deck: "Scans local and plugin Skills and organizes their names, purposes, invocation syntax, sources, and installation locations into a searchable atlas.",
+      role: "Information architecture, local scanning, safety boundaries, frontend implementation",
+      result: "Built a local management app with a sanitized read-only online catalog",
+      proof:
+        "This work proves that I can organize a growing set of AI capabilities into a clear, safe, and maintainable tool.",
+      tools: ["JavaScript", "Node.js", "Local-first", "GitHub Pages"],
+      cta: "Open Project"
+    }
+  },
+  {
+    id: "solo-studio",
+    category: "vibe",
+    featured: false,
+    cover: "",
+    href: "https://www.kanshao2077.cn/solo-studio/",
+    zh: {
+      title: "Solo Studio",
+      deck: "本地优先的个人 OPC 工作台，把 AI 对话、任务、日程、记忆、内容创作和生活清单放进同一套流程。",
+      role: "产品结构、本地数据、AI 动作确认与前端实现",
+      result: "完成无需依赖即可运行、支持数据导入导出的个人工作台",
+      proof: "这个作品证明：我能把零散的个人工作流收拢成一套有边界、可执行的本地产品。",
+      tools: ["JavaScript", "Local Storage", "AI Workflow", "GitHub Pages"],
+      cta: "打开项目"
+    },
+    en: {
+      title: "Solo Studio",
+      deck: "A local-first personal OPC workspace that brings AI chat, tasks, schedules, memory, content creation, and life lists into one workflow.",
+      role: "Product structure, local data, confirmed AI actions, frontend implementation",
+      result: "Built a dependency-free personal workspace with JSON import and export",
+      proof:
+        "This work proves that I can consolidate fragmented personal workflows into a bounded and executable local product.",
+      tools: ["JavaScript", "Local Storage", "AI Workflow", "GitHub Pages"],
+      cta: "Open Project"
+    }
+  },
+  {
     id: "hangzhou-stardew",
     category: "aigc",
     featured: true,
@@ -971,6 +1075,162 @@ export const works = [
       proof:
         "This work proves that I can carry a creative character from visual assets to a validated and portable software package.",
       tools: ["Python", "Codex Skill", "Sprite Animation", "Packaging"],
+      cta: "View Skill"
+    }
+  },
+  {
+    id: "high-impact-cover",
+    category: "skill",
+    featured: false,
+    cover: "",
+    href: "https://github.com/kanshao2077/high-impact-cover",
+    zh: {
+      title: "高冲击封面 Skill",
+      deck: "根据标题、自拍和口播稿自动选择构图，并直接生成适合内容平台的 3:4 真人封面。",
+      role: "构图策略、视觉规则、参考图生图与质量检查",
+      result: "形成从素材输入到真人封面成品的可复用生成 Skill",
+      proof: "这个作品证明：我能把封面判断、人物一致性和成品质检组织成完整的视觉生产流程。",
+      tools: ["Agent Skill", "Image Generation", "Visual Direction", "Xiaohongshu"],
+      cta: "查看 Skill"
+    },
+    en: {
+      title: "High-impact Cover Skill",
+      deck: "Chooses a composition from a title, portrait, and script, then directly generates a 3:4 creator cover for social platforms.",
+      role: "Composition strategy, visual rules, reference-image generation, quality review",
+      result: "Built a reusable generation Skill from source material to a finished portrait cover",
+      proof:
+        "This work proves that I can organize cover judgment, character consistency, and output review into a complete visual-production workflow.",
+      tools: ["Agent Skill", "Image Generation", "Visual Direction", "Xiaohongshu"],
+      cta: "View Skill"
+    }
+  },
+  {
+    id: "skill-product-manager",
+    category: "skill",
+    featured: false,
+    cover: "",
+    href: "https://github.com/kanshao2077/skill-product-manager",
+    zh: {
+      title: "Skill 产品经理",
+      deck: "把模糊的 Skill 想法推进成可安装、可复用并完成基本验证的成品，减少无效追问和空转调研。",
+      role: "产品化流程、方案取舍、结构校验与评测设计",
+      result: "形成覆盖新建、改造、审计和发布准备的元 Skill",
+      proof: "这个作品证明：我能把 Agent 能力开发本身整理成少提问、快落地、可验证的工作流。",
+      tools: ["Agent Skill", "Product Management", "Validation", "Cross-Agent"],
+      cta: "查看 Skill"
+    },
+    en: {
+      title: "Skill Product Manager",
+      deck: "Moves a rough Skill idea into an installable, reusable, and minimally validated product without unnecessary questioning or research loops.",
+      role: "Productization workflow, solution selection, structural validation, evaluation design",
+      result: "Built a meta-Skill for creation, revision, auditing, and release preparation",
+      proof:
+        "This work proves that I can turn Agent capability development itself into a fast, focused, and verifiable workflow.",
+      tools: ["Agent Skill", "Product Management", "Validation", "Cross-Agent"],
+      cta: "View Skill"
+    }
+  },
+  {
+    id: "cinezine",
+    category: "skill",
+    featured: false,
+    cover: "",
+    href: "https://github.com/kanshao2077/CineZine",
+    zh: {
+      title: "CineZine",
+      deck: "根据电影资料与作品气质，生成包含主视觉、人物和关键情节的滚动电影杂志单页。",
+      role: "资料核对、电影视觉提炼、网页模板与验证规则",
+      result: "形成从一部电影到轻量单页网站的通用生成 Skill",
+      proof: "这个作品证明：我能把内容研究、审美判断和前端实现组合成可复用的创作方法。",
+      tools: ["Agent Skill", "HTML", "Editorial Design", "Source Research"],
+      cta: "查看 Skill"
+    },
+    en: {
+      title: "CineZine",
+      deck: "Generates a scrolling cinematic magazine page with key art, characters, and story moments from verified film material and visual direction.",
+      role: "Source verification, cinematic visual direction, web templates, validation rules",
+      result: "Built a reusable generation Skill that turns one film into a lightweight single-page site",
+      proof:
+        "This work proves that I can combine content research, aesthetic judgment, and frontend implementation into a reusable creative method.",
+      tools: ["Agent Skill", "HTML", "Editorial Design", "Source Research"],
+      cta: "View Skill"
+    }
+  },
+  {
+    id: "ukiyo-e-skill",
+    category: "skill",
+    featured: false,
+    cover: "",
+    href: "https://github.com/kanshao2077/ukiyo-e-skill",
+    zh: {
+      title: "浮世绘 Skill",
+      deck: "把日常照片或整组相册转成风格统一的密线版画、撞色都市与超现实人居图景。",
+      role: "视觉语法、照片类型映射、系列一致性与生图质检",
+      result: "形成支持单图与相册批量转绘的原创视觉 Skill",
+      proof: "这个作品证明：我能把个人视觉偏好提炼成稳定、可复用且尊重原图线索的生成系统。",
+      tools: ["Agent Skill", "Image Editing", "Visual System", "AIGC"],
+      cta: "查看 Skill"
+    },
+    en: {
+      title: "Ukiyo-e Skill",
+      deck: "Transforms everyday photos or complete albums into a consistent original language of dense-line prints, bold urban color, and surreal habitats.",
+      role: "Visual grammar, photo-type mapping, series consistency, generation review",
+      result: "Built an original visual Skill for both single-image and album-scale transformations",
+      proof:
+        "This work proves that I can formalize a personal visual preference into a stable, reusable generation system that preserves source cues.",
+      tools: ["Agent Skill", "Image Editing", "Visual System", "AIGC"],
+      cta: "View Skill"
+    }
+  },
+  {
+    id: "draw-cloud-faces",
+    category: "skill",
+    featured: false,
+    cover: "",
+    href: "https://github.com/kanshao2077/draw-cloud-faces",
+    zh: {
+      title: "云朵有表情 Skill",
+      deck: "顺着真实云层的自然轮廓，为云照补上醒目的手绘表情、角色和小动作，同时保留原图。",
+      role: "云形联想、保真编辑规则、提示词组织与结果验收",
+      result: "形成面向真实天空照片的原创角色局部编辑 Skill",
+      proof: "这个作品证明：我能把观察力和想象力转译成有边界、可执行的图像编辑方法。",
+      tools: ["Agent Skill", "Image Editing", "Creative Direction", "Visual QA"],
+      cta: "查看 Skill"
+    },
+    en: {
+      title: "Cloud Faces Skill",
+      deck: "Follows the natural contours of real clouds to add bold hand-drawn expressions, characters, and small actions while preserving the original photo.",
+      role: "Cloud-shape interpretation, faithful editing rules, prompt structure, output review",
+      result: "Built a local-editing Skill for creating original characters from real sky photographs",
+      proof:
+        "This work proves that I can translate observation and imagination into a bounded and executable image-editing method.",
+      tools: ["Agent Skill", "Image Editing", "Creative Direction", "Visual QA"],
+      cta: "View Skill"
+    }
+  },
+  {
+    id: "childlike-skill",
+    category: "skill",
+    featured: false,
+    cover: "",
+    href: "https://github.com/kanshao2077/childlike-skill",
+    zh: {
+      title: "孩子气 Skill",
+      deck: "把人物、宠物、物品和简单场景转绘成普通孩子短暂看过后凭记忆画出的幼拙手绘图。",
+      role: "记忆锚点、幼拙视觉规则、跨 Agent 适配与生成验收",
+      result: "形成可跨 Agent 安装、能实际调用图片模型完成转绘的 Skill",
+      proof: "这个作品证明：我能把抽象的画风感受拆成可执行规则，并处理不同宿主的工具差异。",
+      tools: ["Agent Skill", "Image Generation", "Cross-Agent", "Visual QA"],
+      cta: "查看 Skill"
+    },
+    en: {
+      title: "Childlike Skill",
+      deck: "Redraws people, pets, objects, and simple scenes as imperfect pictures made from a child's brief visual memory.",
+      role: "Memory anchors, childlike visual rules, cross-Agent adaptation, generation review",
+      result: "Built a cross-Agent Skill that can invoke available image models to complete the redraw",
+      proof:
+        "This work proves that I can break an abstract visual feeling into executable rules while handling differences between Agent hosts.",
+      tools: ["Agent Skill", "Image Generation", "Cross-Agent", "Visual QA"],
       cta: "View Skill"
     }
   }
