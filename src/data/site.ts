@@ -534,7 +534,7 @@ export const works = [
     id: "crime-podcast-radar",
     category: "vibe",
     featured: false,
-    cover: "",
+    cover: "/covers/罪案雷达-1200.webp",
     href: "https://www.kanshao2077.cn/crime-podcast-radar/",
     zh: {
       title: "罪案雷达",
