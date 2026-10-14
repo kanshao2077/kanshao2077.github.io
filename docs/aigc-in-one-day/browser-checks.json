@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-14",
+  "chapters": 15,
+  "terms": 41,
+  "platforms": 27,
+  "results": [
+    "15 chapters, glossary references and source indices valid",
+    "Every chapter renders without viewport overflow at 1440, 1024, 768, 390 and 320 px",
+    "Term popup and saved notes, exercise checks, completion persist after reload",
+    "Prompt template and copy button work",
+    "Quiz requires all choices and reveals six explanations",
+    "Platform region and task filters, including repeated navigation, work",
+    "Search finds whitebox lessons and opens glossary result",
+    "Glossary search and empty state work",
+    "Theme persists and exported Markdown includes notes",
+    "Mobile drawer opens, chapter selection closes it",
+    "No browser JavaScript errors or missing local assets"
+  ],
+  "errors": [],
+  "badAssets": []
+}

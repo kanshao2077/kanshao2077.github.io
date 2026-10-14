@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#faf9f6">
+  <meta name="description" content="一天建立完整的 AIGC 创作认知。从生成式 AI 的历史、模型原理、提示词，到图像、视频、声音和第一支作品。侃少的免费交互学习手册。">
+  <title>一天内成为 AIGC 专家 · 侃少的创作手册</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="course.js" defer></script>
+  <script src="industry.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">跳到正文</a>
+  <header class="topbar">
+    <a class="brand" href="#overview" aria-label="AIGC 手册首页"><span class="brand-mark">a.</span><span>AIGC<span class="brand-divider">/</span><span class="brand-sub">创作手册</span></span></a>
+    <nav class="topnav" aria-label="主导航"><a href="#overview" data-nav="overview">学习手册</a><a href="#glossary" data-nav="glossary">术语库</a><a href="#resources" data-nav="resources">参考资料</a></nav>
+    <div class="top-actions"><button id="search-open" class="search-trigger" aria-label="搜索章节或术语">搜索<span class="keycap">⌘ K</span></button><button id="theme-toggle" class="icon-button" aria-label="切换深色模式" title="切换深色模式">◐</button><button id="menu-toggle" class="menu-trigger" aria-label="打开课程目录" aria-expanded="false">目录</button></div>
+  </header>
+  <div class="shell">
+    <aside id="sidebar" class="sidebar" aria-label="课程目录">
+      <div class="sidebar-heading"><span class="eyebrow">THE LEARNING PATH</span><button id="menu-close" class="icon-button" aria-label="关闭目录">×</button></div>
+      <a class="overview-link" href="#overview">从这里开始<span>↗</span></a>
+      <nav id="lesson-nav" aria-label="学习章节"></nav>
+      <div class="sidebar-bottom"><div class="progress-label"><span>你的学习进度</span><span id="progress-count">0 / 15</span></div><div class="progress-track"><div id="progress-bar"></div></div><p>进度与笔记保存在当前浏览器。</p><button id="export-notes" class="text-button">导出学习笔记 ↗</button></div>
+    </aside>
+    <div id="menu-shade" class="menu-shade" hidden></div>
+    <main id="main" tabindex="-1"><noscript>请启用 JavaScript 以阅读交互课程。课程无需登录，进度保存在当前浏览器。</noscript></main>
+  </div>
+  <footer class="footer"><span>© 2026 侃少 <span class="muted">/ 为实际创作而学</span></span><span>原创中文内容 · 更新于 2026.10.14</span><a href="https://cookbook.bensbites.com/cookbook/become-technical-in-1-day/" target="_blank" rel="noopener noreferrer">结构灵感：Ben’s Bites ↗</a></footer>
+  <dialog id="search-dialog" class="search-dialog"><div class="dialog-head"><label for="search-input" class="sr-only">搜索章节或术语</label><input id="search-input" placeholder="搜索概念、章节或制作问题…" autocomplete="off"><button id="search-close" class="icon-button" aria-label="关闭搜索">×</button></div><div id="search-results" class="search-results"></div><div class="dialog-foot">搜索章节标题、正文与术语 <span>ESC 关闭</span></div></dialog>
+  <dialog id="term-dialog" class="term-dialog"><button id="term-close" class="dialog-x" aria-label="关闭术语解释">×</button><span class="eyebrow">IN A NUTSHELL</span><h2 id="term-title"></h2><p id="term-definition"></p><div id="term-example" class="term-example"></div><a href="#glossary" id="term-more" class="text-button">查看完整术语库 ↗</a></dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
