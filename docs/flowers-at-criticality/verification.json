@@ -1,0 +1,42 @@
+{
+  "checkedAt": "2026-10-15T01:25:41.082Z",
+  "pageStatus": 200,
+  "font": [
+    {
+      "familyName": "Huiwen-mincho",
+      "postScriptName": "Huiwen-mincho",
+      "isCustomFont": true,
+      "glyphCount": 6
+    }
+  ],
+  "footerReferenceRemoved": true,
+  "artworks": 8,
+  "processDiagrams": 4,
+  "imagesLoaded": true,
+  "dialog": "open / next / previous / Escape / close passed",
+  "interaction": "slider / phase / playback / reset passed",
+  "layouts": [
+    {
+      "width": 1440,
+      "height": 1000,
+      "viewport": 1440,
+      "content": 1440,
+      "passed": true
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "viewport": 768,
+      "content": 768,
+      "passed": true
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "viewport": 390,
+      "content": 390,
+      "passed": true
+    }
+  ],
+  "browserErrors": []
+}

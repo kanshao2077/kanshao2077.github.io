@@ -1,0 +1,9 @@
+Huiwen-mincho / 汇文明朝体
+Designer: 特里王 / Terry Wang
+Copyright: Public Domain (embedded webfont metadata)
+Original author: https://zhuanlan.zhihu.com/p/344103391
+Webfont provider: ZeoSeven Fonts
+https://fonts.zeoseven.com/items/256/
+https://fontsapi.zeoseven.com/256/main/result.css
+
+These files are unmodified WOFF2 chunks. The stylesheet selects only characters used by the exhibition.

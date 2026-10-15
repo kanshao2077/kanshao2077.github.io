@@ -1,0 +1,10 @@
+window.FLOWER_WORKS = [
+  { id:'01-pressure', number:'01', title:'温柔的高压', en:'Soft Pressure', phase:'聚合 / ACCUMULATION', material:'绣球 · 芍药 · 洋牡丹', concept:'临界花态 / 容器与压力', description:'柔软的花瓣被压进狭小的镜面容器，淡粉与乳白之间浮现暗红缝隙。金属已经开始形变，花体仍然保持完整。每一处温柔都在积蓄压力，事件停留在它尚未发生的前一刻。', quote:'柔软也有无法继续容纳自己的时刻。' },
+  { id:'02-centre', number:'02', title:'中心正在撤离', en:'The Departing Centre', phase:'裂变 / RUPTURE', material:'大丽花 · 球菊 · 帝王花', concept:'生成 / 中心的消失', description:'花瓣分离成向外扩张的层环，中央却出现深黑空洞。花越来越大，凝聚它的东西越来越少。一次完整的盛放正在转变为花瓣之间的距离，以及无法填补的缺席。', quote:'它失去中心，也获得空间。' },
+  { id:'03-fireworks', number:'03', title:'礼花没有天空', en:'Fireworks Without a Sky', phase:'喷发 / ERUPTION', material:'针垫花 · 葱属花序 · 球菊 · 松虫草', concept:'崇高 / 被悬停的庆典', description:'细长花茎从同一点向四周放射，末端的花序与种荚像冻结在半空的火星。扭曲的银色支撑托起一场孤立的庆典。所有方向都在释放，周围却是一片沉默。', quote:'一场爆炸，也可以没有声音。' },
+  { id:'04-red', number:'04', title:'红色超过了容器', en:'Red Exceeds Its Vessel', phase:'溢出 / OVERFLOW', material:'红掌 · 鸡冠花 · 火焰百合', concept:'耗费 / 无用的丰盛', description:'蜡质花面与绒状褶皱挤成向上翻涌的红色花体。边缘被拉开，容器只剩下勉强维持的轮廓。颜色占据全部空间，丰盛开始显露出难以维持的代价。', quote:'盛放，是生命把自己花出去的方式。' },
+  { id:'05-unnamed', number:'05', title:'无法命名的盛放', en:'An Unnamed Bloom', phase:'变异 / MUTATION', material:'蝴蝶兰 · 鸢尾 · 马蹄莲的虚拟杂交', concept:'后自然 / 无籍植物', description:'兰花的结构出现在马蹄莲的卷曲内部，鸢尾褶皱沿枝条继续生长。同一株植物拥有互不相容的开花方式。局部可以辨认，整体无法命名：它从分类的容器中溢出。', quote:'当分类失效，未知开始开花。' },
+  { id:'06-departure', number:'06', title:'离开是一种繁殖', en:'Departure as Propagation', phase:'扩散 / DISPERSAL', material:'蒲公英 · 铁线莲果序 · 芦苇', concept:'离心的生命 / 解体与延续', description:'中央花体已经稀疏，种子和绒毛构成远大于主体的悬浮云团。每一个微小单元都沿着不同方向离开。完整的个体逐渐退场，生命在外围获得新的去处。', quote:'有些离开，是为了在别处开花。' },
+  { id:'07-negative', number:'07', title:'花的负片', en:'Negative Bloom', phase:'耗散 / DISSIPATION', material:'干燥绣球 · 枯荷 · 花脉 · 裸露枝梗', concept:'时间 / 缺席的形状', description:'颜色退到灰白、焦褐和暗银。花瓣消失，承重的枝梗、花脉与花托暴露出来。残余沿旧的放射路径停留，观看者根据缺席重建一次已经结束的盛放。', quote:'残骸保存着丰盛曾经抵达的地方。' },
+  { id:'08-eternal', number:'08', title:'明天还会是今天', en:'Tomorrow Will Still Be Today', phase:'重演 / RECURRENCE', material:'融合前七件形态的合成花体', concept:'合成永生 / 被撤回的时间', description:'花瓣没有损伤，颜色没有衰退，结构始终停在最佳状态。封闭的镜面底座拒绝任何痕迹。它获得了永久的美，也失去了时间能够触碰它的地方。', quote:'一朵不会凋谢的花，如何证明自己曾经活过？' }
+];

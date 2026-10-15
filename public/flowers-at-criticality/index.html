@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f5f2">
+  <meta name="description" content="花儿要爆炸啦：一场关于盛放、过剩与合成生命的虚拟花艺展览。八件植物雕塑，一次被延长的爆炸。">
+  <meta property="og:title" content="花儿要爆炸啦 · Flowers at Criticality">
+  <meta property="og:description" content="一朵花，能够承受多少生命，才会开始爆炸？">
+  <meta property="og:image" content="https://www.kanshao2077.cn/flowers-at-criticality/assets/03-fireworks.jpg">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.kanshao2077.cn/flowers-at-criticality/">
+  <link rel="canonical" href="https://www.kanshao2077.cn/flowers-at-criticality/">
+  <title>花儿要爆炸啦 · Flowers at Criticality</title>
+  <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/03-fireworks.jpg" as="image">
+  <link rel="stylesheet" href="assets/huiwen.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#about">跳过封面，进入展览介绍</a>
+  <header class="site-header">
+    <a class="wordmark" href="#top" aria-label="花儿要爆炸啦，回到顶部">侃少<span class="studio">虚拟展览 / 2026</span></a>
+    <nav aria-label="展览导航"><a href="#works">作品</a><a href="#experiment">时间实验</a><a href="#concept">命题</a></nav>
+  </header>
+  <main>
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <img class="hero-art" src="assets/03-fireworks.jpg" alt="橙色针垫花、酒红球菊与细枝呈礼花状向外爆发，由扭曲的镜面金属底座托起" fetchpriority="high" width="1536" height="1024">
+      <div class="hero-shade" aria-hidden="true"></div>
+      <div class="hero-overline eyebrow">一次关于盛放的虚拟研究<span>八件作品 / 一个事件</span></div>
+      <h1 id="hero-title"><span>花儿要</span><span>爆炸啦</span></h1>
+      <p class="hero-deck"><span>Flowers at Criticality</span><br>关于盛放、过剩与合成生命</p>
+      <a class="scroll-cue" href="#about"><span>进入展览</span><span aria-hidden="true">↓</span></a>
+      <span class="hero-caption mono">03 — 礼花没有天空</span>
+    </section>
+
+    <section class="about section-shell" id="about" aria-labelledby="about-title">
+      <div class="section-label"><span class="eyebrow">引言</span><span class="mono">一场被延长的爆炸</span></div>
+      <div class="about-layout">
+        <h2 id="about-title">一朵花，<br>能够承受多少生命，<br>才会开始<span class="gold">爆炸？</span></h2>
+        <div class="body-copy"><p>花被赠送、修剪、安置在恰当的容器里，承担爱意与纪念。但盛放也包含失控的倾向：花瓣向外翻卷，颜色挤占视野，原本紧闭的结构逐渐无法容纳自身。</p><p>我们将这种倾向推向极端。八件虚拟花艺雕塑分别停留在积压、裂变、喷射、扩散与耗散的时刻。金属维持秩序，植物持续向它的边界施压。</p><p>生成式视觉使这场事件可以反复发生。当现实的花通过凋谢完成时间，合成的花却拥有无数次盛放。<strong>能够重新生成，是否意味着从未真正失去？</strong></p></div>
+      </div>
+      <div class="project-meta"><div><span>MEDIUM</span><p>生成图像 / 虚拟雕塑 / 交互影像</p></div><div><span>CHAPTERS</span><p>八种花态 · 一个临界事件</p></div><div><span>STATUS</span><p>虚拟艺术项目 · 概念展览</p></div></div>
+    </section>
+
+    <section class="works section-shell" id="works" aria-labelledby="works-title">
+      <div class="section-label"><span class="eyebrow">作品</span><span class="mono">01 — 08</span></div>
+      <div class="section-heading"><h2 id="works-title">盛放的八种失控</h2><p>从积蓄，到离开，到一次没有终点的重演。<br>点击作品，进入单件档案。</p></div>
+      <div class="works-grid" id="works-grid"></div>
+      <noscript><p>八件作品：温柔的高压、中心正在撤离、礼花没有天空、红色超过了容器、无法命名的盛放、离开是一种繁殖、花的负片、明天还会是今天。启用 JavaScript 可查看作品档案与交互实验。</p></noscript>
+    </section>
+
+    <section class="quote-section"><span class="eyebrow">无用的丰盛</span><p>盛放，<br>是生命把自己<br><em>花出去</em>的方式。</p></section>
+
+    <section class="experiment section-shell" id="experiment" aria-labelledby="experiment-title">
+      <div class="section-label"><span class="eyebrow">时间实验</span><span class="mono">观看 / 暂停 / 重演</span></div>
+      <div class="section-heading"><h2 id="experiment-title">把一朵花，推向临界。</h2><p>拖动时间，让花聚合、盛放、离散。<br>或者停在它即将失去形状的那一刻。</p></div>
+      <div class="lab-frame"><canvas id="bloom-canvas" aria-label="随时间变化的程序化花朵，拖动下方时间滑块可控制盛放与耗散"></canvas><span class="lab-tag mono">无穷标本</span><span class="lab-state" id="lab-state">临界</span><span class="lab-hint mono">移动指针，改变观看角度</span></div>
+      <div class="lab-controls"><button id="play-toggle" class="plain-button" type="button" aria-pressed="false"><span aria-hidden="true">▶</span> 自动演化</button><label class="timeline-label" for="bloom-time">事件时间</label><input id="bloom-time" type="range" min="0" max="100" value="44" aria-describedby="time-label"><output id="time-label" for="bloom-time" class="mono">T + 0.44</output><button id="reset-time" class="plain-button" type="button">↺ 重新盛放</button></div>
+      <div class="phase-rail mono"><span>01 聚合</span><span>02 临界</span><span>03 喷发</span><span>04 耗散</span></div>
+      <p class="experiment-note">以代码绘制的形态实验。每一次回到起点，都将消失的花重新交还给观看者。</p>
+    </section>
+
+    <section class="concept section-shell" id="concept" aria-labelledby="concept-title">
+      <div class="section-label"><span class="eyebrow">命题</span><span class="mono">五种关于生命的观看方式</span></div>
+      <div class="concept-heading"><h2 id="concept-title">美，在形状<br><em>失效</em>的时候。</h2><p>花是入口。真正被展出的，是容器、边界、时间，以及一个完整的生命如何超过自身。</p></div>
+      <div class="propositions">
+        <details open><summary><span class="mono">I</span><span>临界花态 <small>THE THRESHOLD</small></span><span class="detail-symbol" aria-hidden="true">+</span></summary><div class="proposition-body"><p>闭合时，事件还没有发生；散落时，事件已经结束。我们将花停在两者之间：结构仍然成立，却已经显露无法继续成立的迹象。观看被悬在一个延长的“即将发生”里。</p><blockquote>一切都还完整，一切都已经开始破裂。</blockquote></div></details>
+        <details><summary><span class="mono">II</span><span>无用的丰盛 <small>EXPENDITURE</small></span><span class="detail-symbol" aria-hidden="true">+</span></summary><div class="proposition-body"><p>颜色过于浓烈，花瓣过于密集，结构过于繁复。作品将丰盛推向难以维持的程度，让生命把积蓄投入一次短暂、奢侈且无法回收的显现。美因这种支出而有了代价。</p><blockquote>生命最耀眼的时刻，也可能是它耗尽自己的时刻。</blockquote></div></details>
+        <details><summary><span class="mono">III</span><span>离心的生命 <small>BECOMING</small></span><span class="detail-symbol" aria-hidden="true">+</span></summary><div class="proposition-body"><p>爆炸前，我们看见一朵花；爆炸后，我们看见距离、轨迹与碎片之间的关系。当中心空掉，个体的边界向外延伸。解体让生命获得了更多去处，完整也就不再是唯一的存在方式。</p><blockquote>它失去形状，也获得空间。</blockquote></div></details>
+        <details><summary><span class="mono">IV</span><span>无籍植物 <small>POST-NATURE</small></span><span class="detail-symbol" aria-hidden="true">+</span></summary><div class="proposition-body"><p>牡丹的层叠、兰花的结构、红掌的表面和种子的离散方式可以在同一株植物上相遇。我们能够辨认局部，却无法命名整体。它拥有生长的暗示，却没有可以返回的原生地。</p><blockquote>当分类失效，未知开始开花。</blockquote></div></details>
+        <details><summary><span class="mono">V</span><span>合成永生 <small>THE POLITICS OF TIME</small></span><span class="detail-symbol" aria-hidden="true">+</span></summary><div class="proposition-body"><p>生成可以撤回损伤，恢复枯萎，抹去季节。每一次完美的重演，都可能消除生命经历过的痕迹。最后那朵过分洁净的花获得永久的美，却失去了时间能够触碰它的地方。</p><blockquote>一朵不会凋谢的花，如何证明自己曾经活过？</blockquote></div></details>
+      </div>
+    </section>
+
+    <section class="process section-shell" id="process" aria-labelledby="process-title">
+      <div class="section-label"><span class="eyebrow">形态研究</span><span class="mono">植物 / 空间 / 时间</span></div>
+      <div class="section-heading"><h2 id="process-title">从一朵花，到一场事件。</h2><p>把植物形态拆成结构，把结构推向失控。<br>每一步都回应同一个问题：美能够维持多久？</p></div>
+      <div class="process-strip">
+        <figure><div class="process-image" id="diagram-form"></div><figcaption><span class="mono">01 / OBSERVE</span><h3>提取植物的方向</h3><p>层叠、放射、卷曲、离散。不同花材提供不同的空间动词。</p></figcaption></figure>
+        <figure><div class="process-image" id="diagram-space"></div><figcaption><span class="mono">02 / HYBRIDISE</span><h3>建立不可能的花态</h3><p>将物种结构重新组合，保留真实纹理，让形态越过分类。</p></figcaption></figure>
+        <figure><div class="process-image" id="diagram-burst"></div><figcaption><span class="mono">03 / DISPLACE</span><h3>让中心失去控制</h3><p>推开花瓣，拉长花茎，留下空心。爆炸成为可见的空间关系。</p></figcaption></figure>
+        <figure><div class="process-image" id="diagram-time"></div><figcaption><span class="mono">04 / REPEAT</span><h3>把时间折成循环</h3><p>让一次不可逆的盛放反复发生，观察重演如何改变失去的意义。</p></figcaption></figure>
+      </div>
+      <div class="model-essay"><span class="eyebrow">关于合成生命</span><div><h3>生成使形态成立。<br>爆炸使形态超过自身。</h3><p>潜在扩散研究展示了在压缩表征中合成图像的方式；视频生成研究进一步引入时间维度。本项目借此提出一种生命想象：植物的边界、花瓣的数量与盛放的时长，都成为可以重新协商的条件。</p><p>这一对应是艺术隐喻。系列作品图以生成工具制作，交互实验以程序绘制；页面呈现的是虚拟形态研究。</p><div class="research-links"><a href="https://arxiv.org/abs/2112.10752" target="_blank" rel="noopener noreferrer">Latent Diffusion, 2021 ↗</a><a href="https://arxiv.org/abs/2304.08818" target="_blank" rel="noopener noreferrer">Align Your Latents, 2023 ↗</a></div></div></div>
+    </section>
+
+    <section class="closing"><img src="assets/06-departure.jpg" alt="蒲公英种子从逐渐空掉的中央向黑暗空间扩散" width="1536" height="1024" loading="lazy"><div><span class="eyebrow">在盛放之后</span><p>有些离开，<br>是为了在别处开花。</p><a href="#top">回到最初的盛放 ↑</a></div></section>
+  </main>
+  <footer class="site-footer"><div><a class="wordmark" href="#top">侃少</a><p>花儿要爆炸啦 / Flowers at Criticality</p></div><div><p>虚拟花艺研究</p><p>2026 / 八件作品</p></div><a href="#top" class="back-top" aria-label="回到顶部">↑</a></footer>
+  <dialog id="art-dialog" aria-labelledby="dialog-title"><div class="dialog-toolbar"><span id="dialog-counter" class="mono"></span><div><button id="previous-art" class="icon-button" aria-label="上一件作品">←</button><button id="next-art" class="icon-button" aria-label="下一件作品">→</button><button id="close-dialog" class="icon-button" aria-label="关闭作品档案">✕</button></div></div><img id="dialog-image" alt=""><div class="dialog-copy"><span class="eyebrow" id="dialog-phase"></span><h2 id="dialog-title"></h2><p class="dialog-en" id="dialog-en"></p><p id="dialog-description"></p><dl><div><dt>花材原型</dt><dd id="dialog-material"></dd></div><div><dt>概念坐标</dt><dd id="dialog-concept"></dd></div></dl><blockquote id="dialog-quote"></blockquote></div></dialog>
+  <script src="works.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
