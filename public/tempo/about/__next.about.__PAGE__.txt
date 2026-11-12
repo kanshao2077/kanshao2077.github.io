@@ -1,0 +1,53 @@
+1:"$Sreact.fragment"
+2:"static/chunks/591-dfc28ae945986763.js"
+3:"static/chunks/app/about/page-f71065ffb99f5716.js"
+4:"LanguageProvider"
+5:I[7831,["591","$2","220","$3"],"$4"]
+6:"static/chunks/app/layout-270d3532dddc52d2.js"
+7:I[4264,["177","$6"],"SiteAtmosphere"]
+8:I[696,["177","$6"],"PageTransitions"]
+9:I[1310,["177","$6"],"ScrollRhythm"]
+a:I[8154,["177","$6"],"SiteChrome"]
+b:I[7121,[],""]
+c:I[4581,[],""]
+d:"static/chunks/756-0c7f280d518f00be.js"
+e:"static/chunks/148-5d6cf550b9799909.js"
+f:"static/chunks/app/page-4e6c4be808ce1446.js"
+10:I[6960,["756","$d","148","$e","591","$2","974","$f"],"TransitionLink"]
+17:I[804,["591","$2","220","$3"],"AboutSignal"]
+18:I[2634,["591","$2","220","$3"],"StudioConsole"]
+19:I[7831,["591","$2","220","$3"],"LocalizedHtml"]
+1a:I[7831,["591","$2","220","$3"],"Localized"]
+24:"ViewportBoundary"
+25:I[484,[],"$24"]
+26:"MetadataBoundary"
+27:I[484,[],"$26"]
+28:"$Sreact.suspense"
+29:I[6869,[],"IconMark"]
+:HL["/tempo/_next/static/css/5c812e8a552114c9.css","style"]
+12:X
+15:X
+15:C
+16:[["children",{"s":"__PAGE__","h":160,"d":{"r":["$","$1","c",{"children":[["$","main",null,{"id":"main-content","className":"about frame","children":[["$","section",null,{"id":"about","className":"home-about","children":[["$","div",null,{"className":"section-kicker mono","children":[["$","span",null,{"children":"02 / ABOUT THE STUDIO"}],["$","span",null,{"children":"FILM / AI / EXPERIMENTS"}]]}],["$","section",null,{"className":"about-intro","children":[["$","$L17",null,{}],["$","$L18",null,{}],["$","div",null,{"className":"about-statement","children":[["$","h2",null,{"className":"studio-title","children":"TEMPO."}],["$","$L19",null,{"zh":"<p>1967 年，《毕业生》的结尾，本杰明与伊莱恩逃离婚礼，坐上驶向未知的<span class=\"keep-phrase\">公交</span>，相视而笑。然而，镜头没有在最圆满的一刻切走。胶片继续转动，笑容渐渐褪去，漫长的沉默最终取代了狂喜。画面依旧，结局却在时间的<span class=\"keep-phrase\">流逝中悄然改写。</span></p>\n<p>影像真正的意义，有时就藏在这微小的、提前或延后的<span class=\"keep-phrase\">“半拍”里。</span></p>\n<p>半拍 TEMPO 由此展开自己的创作观念：以生成式 AI 为媒介，以电影语言为方法，探索原创短片、实验影像，以及那些曾被过去想象、却尚未真正抵达的未来。在算法崇尚平滑与精准的今天，我们依然迷恋粗粝的直觉——不必遵循既定的节奏，也不必重复熟悉的表达。</p>\n<p>当生成式 AI 让影像无限繁殖，我们更愿意慢下来，赋予“真实”以重量，去<span class=\"keep-phrase\">追问：</span>在一切皆可生成的时代，什么仍值得被创造、被凝视、被长久地记住？</p>\n<p><span class=\"keep-phrase\">不必合拍，自有节奏。</span></p>\n","en":"<p>In the final scene of The Graduate (1967), Benjamin and Elaine flee a wedding, board a bus and smile at each other. But the camera keeps rolling. Their smiles fade; silence takes the place of elation. The image remains, while time quietly rewrites the ending.</p><p>Sometimes the meaning of an image lies in that half beat—held a little longer, or cut a little sooner.</p><p>This is where TEMPO begins: using generative AI as a medium and cinematic language as a method, we explore original shorts, experimental moving images, and futures once imagined but not yet reached. We need not follow a prescribed rhythm or repeat familiar expressions.</p><p>As generative AI makes images endlessly reproducible, we choose to give reality weight and ask: when anything can be generated, what still deserves to be created, contemplated and remembered?</p><p>Not in step. In our own time.</p>"}],["$","p",null,{"className":"founder mono","children":["Founded by ","Milo","."]}]]}]]}]]}],["$","section",null,{"id":"contact","className":"contact-section","aria-labelledby":"contact-heading","children":[["$","h2",null,{"id":"contact-heading","className":"mono","children":"05 / CONTACT"}],["$","div",null,{"className":"contact-content","children":[["$","p",null,{"className":"contact-intro","children":["$","$L1a",null,{"zh":[["$","span",null,{"children":"世界按时发生，"}],["$","wbr",null,{}],["$","span",null,{"children":"我们例外。"}]],"en":"The world runs on time. We’re the exception."}]}],["$","ul",null,{"className":"contact-links","children":[["$","li","email",{"className":"contact-platform-email","children":["$","a",null,{"className":"contact-entry","href":"mailto:xukan1200@gmail.com","children":["$L1b","$L1c"]}]}],"$L1d","$L1e","$L1f","$L20"]}]]}],false]}]]}],["$L21"],"$L22"]}],"p":"$@23","v":null,"s":"$12"}}]]
+13:[["children",{"s":"about","h":96,"d":{"r":["$","$1","c",{"children":[null,["$","$Lb",null,{"parallelRouterKey":"children","template":["$","$Lc",null,{}]}]]}],"p":"$@14","v":"$15","s":"$12"},"c":"$Q16"}]]
+0:{"t":{"t":{"s":"","h":80,"d":{"r":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/tempo/_next/static/css/5c812e8a552114c9.css","precedence":"next"}]],["$","html",null,{"lang":"zh-CN","className":"__variable_7701c4 __variable_9d84c4","data-theme":"dark","data-scroll-behavior":"smooth","children":["$","body",null,{"id":"top","children":["$","$L5",null,{"children":[["$","$L7",null,{}],["$","$L8",null,{}],["$","$L9",null,{}],["$","a",null,{"className":"skip-link","href":"#main-content","children":"Skip to content"}],["$","$La",null,{"name":"TEMPO."}],["$","$Lb",null,{"parallelRouterKey":"children","template":["$","$Lc",null,{}],"notFound":[["$","main",null,{"id":"main-content","className":"not-found-layout","children":["$","section",null,{"className":"not-found-copy","aria-labelledby":"not-found-title","children":[["$","h1",null,{"id":"not-found-title","children":"404 — Page not found."}],["$","$L10",null,{"className":"not-found-link","href":"/","children":"Return home."}]]}]}],[]]}],["$","footer",null,{"className":"site-footer frame","children":[["$","p",null,{"children":"The film comes first."}],["$","div",null,{"className":"footer-meta mono","children":["$","span",null,{"children":"© 2026 TEMPO."}]}]]}]]}]}]}]]}],"p":"$@11","v":null,"s":"$12"},"c":"$Q13"},"h":{"r":["$","$1","h",{"children":[null,["$","$L25",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","$L27",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$28",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"About — TEMPO."}],["$","meta","1",{"name":"description","content":"半拍 TEMPO，生成式影像实验室。Generative Moving Image Lab. Founded by Milo."}],["$","meta","2",{"name":"keywords","content":"半拍,Tempo,generative moving image lab,short film,experimental cinema"}],["$","link","3",{"rel":"canonical","href":"https://www.kanshao2077.cn/tempo/about/"}],["$","meta","4",{"property":"og:title","content":"About — TEMPO."}],["$","meta","5",{"property":"og:description","content":"半拍 TEMPO，生成式影像实验室。Generative Moving Image Lab. Founded by Milo."}],["$","meta","6",{"property":"og:url","content":"https://www.kanshao2077.cn/tempo/about/"}],["$","meta","7",{"property":"og:image","content":"https://www.kanshao2077.cn/tempo/og.png"}],["$","meta","8",{"property":"og:image:width","content":"1200"}],["$","meta","9",{"property":"og:image:height","content":"630"}],["$","meta","10",{"property":"og:image:alt","content":"TEMPO — 生成式影像实验室"}],["$","meta","11",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","12",{"name":"twitter:title","content":"TEMPO — 生成式影像实验室"}],["$","meta","13",{"name":"twitter:description","content":"TEMPO — 生成式影像实验室"}],["$","meta","14",{"name":"twitter:image","content":"https://www.kanshao2077.cn/tempo/og.png"}],["$","link","15",{"rel":"icon","href":"/tempo/brand/favicon-tempo.png","type":"image/png","sizes":"64x64"}],["$","link","16",{"rel":"apple-touch-icon","href":"/tempo/brand/apple-touch-tempo.png","type":"image/png","sizes":"180x180"}],["$","$L29","17",{}]]}]}],null]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"p":"$@2a","v":null,"s":"$12"}},"a":"$@2b","u":"$@2c","b":"_h7jhAU3MRlMSTrjZfV_v"}
+2d:I[1257,["591","$2","220","$3"],"WechatContact"]
+2e:I[484,[],"OutletBoundary"]
+:HL["/tempo/_next/static/css/8b109c435e59d7dc.css","style"]
+1b:["$","span",null,{"className":"contact-icon","style":{"--contact-icon":"url(\"/tempo/brands/contact/email.svg\")"},"aria-hidden":"true"}]
+1c:["$","span",null,{"className":"contact-platform mono","children":"EMAIL"}]
+1d:["$","li","wechat",{"className":"contact-platform-wechat","children":["$","$L2d",null,{"qrSrc":"/tempo/brands/contact/wechat-qr.jpg","children":[["$","span",null,{"className":"contact-icon","style":{"--contact-icon":"url(\"/tempo/brands/contact/wechat.svg\")"},"aria-hidden":"true"}],["$","span",null,{"className":"contact-platform mono","children":"WECHAT"}]]}]}]
+1e:["$","li","rednote",{"className":"contact-platform-rednote","children":["$","a",null,{"className":"contact-entry","href":"https://www.xiaohongshu.com/user/profile/6604bff8000000000b00e3b8?xsec_token=ABKzZzQkk99aDpANc0IUG95IQZw2r3hBJdizltLd_X474%3D&xsec_source=pc_search","target":"_blank","rel":"noopener noreferrer","children":[["$","span",null,{"className":"contact-icon","style":{"--contact-icon":"url(\"/tempo/brands/contact/rednote.svg\")"},"aria-hidden":"true"}],["$","span",null,{"className":"contact-platform mono","children":"REDNOTE"}]]}]}]
+1f:["$","li","bilibili",{"className":"contact-platform-bilibili","children":["$","a",null,{"className":"contact-entry","href":"https://space.bilibili.com/252142379","target":"_blank","rel":"noopener noreferrer","children":[["$","span",null,{"className":"contact-icon","style":{"--contact-icon":"url(\"/tempo/brands/contact/bilibili.svg\")"},"aria-hidden":"true"}],["$","span",null,{"className":"contact-platform mono","children":"BILIBILI"}]]}]}]
+20:["$","li","jike",{"className":"contact-platform-jike","children":["$","a",null,{"className":"contact-entry","href":"https://web.okjike.com/u/e347ebfb-f0f4-4283-8039-1d7f84c7a7d2","target":"_blank","rel":"noopener noreferrer","children":[["$","span",null,{"className":"contact-icon","style":{"--contact-icon":"url(\"/tempo/brands/contact/jike.svg\")"},"aria-hidden":"true"}],["$","span",null,{"className":"contact-platform mono","children":"JIKE"}]]}]}]
+21:["$","link","0",{"rel":"stylesheet","href":"/tempo/_next/static/css/8b109c435e59d7dc.css","precedence":"next"}]
+22:["$","$L2e",null,{"children":["$","$28",null,{"name":"Next.MetadataOutlet","children":"$@2f"}]}]
+12:300
+2f:null
+2c:true
+12:C
+2b:0
+14:"$undefined"
+11:"$undefined"
+2a:"$undefined"
+23:"$undefined"

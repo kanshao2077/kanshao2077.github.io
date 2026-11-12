@@ -1,0 +1,7 @@
+:HL["/tempo/_next/static/media/52e25459168ca65d-s.p.ttf","font",{"crossOrigin":"","type":"font/ttf"}]
+:HL["/tempo/_next/static/media/f270c174075d2249-s.p.ttf","font",{"crossOrigin":"","type":"font/ttf"}]
+:HL["/tempo/_next/static/css/5c812e8a552114c9.css","style"]
+:HL["/tempo/_next/static/css/8b109c435e59d7dc.css","style"]
+2:[["children",{"s":"__PAGE__","h":160}]]
+1:[["children",{"s":"about","h":96,"c":"$Q2"}]]
+0:{"b":"_h7jhAU3MRlMSTrjZfV_v","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
