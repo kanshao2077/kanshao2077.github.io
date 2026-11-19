@@ -4,4 +4,4 @@
 :HL["/tempo/_next/static/css/8b109c435e59d7dc.css","style"]
 2:[["children",{"s":"__PAGE__","h":160}]]
 1:[["children",{"s":"about","h":96,"c":"$Q2"}]]
-0:{"b":"uzYY2hysiYuVTkJ8B6hBm","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
+0:{"b":"JYAJbLQyycA9C1okffI7w","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
